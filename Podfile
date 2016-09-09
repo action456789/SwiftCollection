@@ -14,5 +14,7 @@ target 'SwiftCollection' do
     
     # swift 版 Masonry
     pod 'SnapKit', '~> 0.15.0'
+    
+    pod 'ReactiveCocoa', '~> 4.2.2'
 end
 

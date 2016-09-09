@@ -19,6 +19,7 @@
 		10B0966F1D4B454C00DC936F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B096691D4B454C00DC936F /* BaseViewController.swift */; };
 		10B096701D4B454C00DC936F /* CellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0966C1D4B454C00DC936F /* CellItem.swift */; };
 		10B096711D4B454C00DC936F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0966D1D4B454C00DC936F /* RootViewController.swift */; };
+		10F5B06D1D82B63000382E50 /* RACDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5B06C1D82B63000382E50 /* RACDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		10B096691D4B454C00DC936F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		10B0966C1D4B454C00DC936F /* CellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellItem.swift; sourceTree = "<group>"; };
 		10B0966D1D4B454C00DC936F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		10F5B06C1D82B63000382E50 /* RACDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACDemoViewController.swift; sourceTree = "<group>"; };
 		2F3345382F5DBCFD687AEA5B /* Pods-SwiftCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollection/Pods-SwiftCollection.debug.xcconfig"; sourceTree = "<group>"; };
 		71DBDD00F666AF0DE967A1A4 /* Pods_SwiftCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D57E7908A45E01EF52F82D9 /* Pods-SwiftCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollection/Pods-SwiftCollection.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		10B0966A1D4B454C00DC936F /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				10F5B06B1D82B5F100382E50 /* ReactCocoaUseDemo */,
 				10AF36AF1D4B47F50074587D /* NetWorkInterfaces */,
 			);
 			path = MainViewControllers;
@@ -143,6 +146,14 @@
 				10B0966D1D4B454C00DC936F /* RootViewController.swift */,
 			);
 			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		10F5B06B1D82B5F100382E50 /* ReactCocoaUseDemo */ = {
+			isa = PBXGroup;
+			children = (
+				10F5B06C1D82B63000382E50 /* RACDemoViewController.swift */,
+			);
+			path = ReactCocoaUseDemo;
 			sourceTree = "<group>";
 		};
 		91946458180847E6772C911F /* Frameworks */ = {
@@ -287,6 +298,7 @@
 				10B096711D4B454C00DC936F /* RootViewController.swift in Sources */,
 				10B096701D4B454C00DC936F /* CellItem.swift in Sources */,
 				10A0A99D1D508DF9009DF5F3 /* IndexResult.swift in Sources */,
+				10F5B06D1D82B63000382E50 /* RACDemoViewController.swift in Sources */,
 				10B0966E1D4B454C00DC936F /* BaseNavigationController.swift in Sources */,
 				106F1EBE1D4B56B800FCC04F /* BaseRequest.swift in Sources */,
 				10B096371D4B411C00DC936F /* AppDelegate.swift in Sources */,
