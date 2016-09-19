@@ -6,18 +6,19 @@
 //  Copyright © 2016 SenKe. All rights reserved.
 //
 
-import Alamofire
-import SwiftyJSON
+//import Alamofire
+//import SwiftyJSON
+import Foundation
 
 class BaseRequest: NSObject {
     func sleep(a: Int) -> Bool {
         return true
     }
     
-    func request(url url: String) {
-        
-        let clientVersion = NSBundle.mainBundle().infoDictionary?["CFBundleVersion"]
-    
+    func request(url: String) {
+/*
+        let clientVersion = Bundle.main.infoDictionary?["CFBundleVersion"]
+
         let parameter = [ "clientId": "2"
                         , "uc" : "iphone"
                         , "cl": "11"
@@ -39,8 +40,9 @@ class BaseRequest: NSObject {
             case .Failure(let error):
                 print(error)
             }
-        }
+        } */
     }
+
 }
 
 

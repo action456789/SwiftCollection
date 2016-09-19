@@ -84,18 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-SwiftCollection/Alamofire.framework"
-  install_framework "Pods-SwiftCollection/ObjectMapper.framework"
-  install_framework "Pods-SwiftCollection/ReactiveCocoa.framework"
-  install_framework "Pods-SwiftCollection/Result.framework"
-  install_framework "Pods-SwiftCollection/SnapKit.framework"
-  install_framework "Pods-SwiftCollection/SwiftyJSON.framework"
+  install_framework "Pods-SwiftCollection/RxCocoa.framework"
+  install_framework "Pods-SwiftCollection/RxSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-SwiftCollection/Alamofire.framework"
-  install_framework "Pods-SwiftCollection/ObjectMapper.framework"
-  install_framework "Pods-SwiftCollection/ReactiveCocoa.framework"
-  install_framework "Pods-SwiftCollection/Result.framework"
-  install_framework "Pods-SwiftCollection/SnapKit.framework"
-  install_framework "Pods-SwiftCollection/SwiftyJSON.framework"
+  install_framework "Pods-SwiftCollection/RxCocoa.framework"
+  install_framework "Pods-SwiftCollection/RxSwift.framework"
 fi

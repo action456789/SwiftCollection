@@ -4,37 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ObjectMapper.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-SwiftCollection.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ReactiveCocoa.xcscheme</key>
+		<key>RxCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Result.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SnapKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SwiftyJSON.xcscheme</key>
+		<key>RxSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,37 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>28EB08046FC005B912F4F5FC87189C4C</key>
+		<key>1B6F21566DFB5E493753B56E425FF708</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>66FB16C74A3742F2EB9A11CB56607528</key>
+		<key>583B264BB7F81DD7446856E0F0BC09EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8F127D9D99F6E5E454D4A9E98D9A8F9E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D5D6200D4BE741574DBD4FB768A6F55B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FB47ACB8A7F9C510756D9ECF5718B419</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FE40CA6E030643C696BF45521E3FF95F</key>
+		<key>8984803196CC0C4ED93722058334A7D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

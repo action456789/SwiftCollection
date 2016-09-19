@@ -11,7 +11,7 @@ import UIKit
 class BaseNavigationController: UINavigationController, UIGestureRecognizerDelegate, UINavigationControllerDelegate {
     override func viewDidLoad() {
         interactivePopGestureRecognizer?.delegate = self
-        interactivePopGestureRecognizer?.enabled = true
+        interactivePopGestureRecognizer?.isEnabled = true
         delegate = self
     }
 }

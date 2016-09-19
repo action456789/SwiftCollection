@@ -15,26 +15,29 @@ class RootViewController: BaseViewController {
         tableView.delegate = self;
         tableView.dataSource = self;
         tableView.rowHeight = 50;
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "RootCell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "RootCell")
+        
         return tableView
     }
     
     var dataArray: [CellItem] {
-        let array = [CellItem.init(name: "Alamofire 网络请求", objectClass: NetWorkInterfaceDemo.self)]
+        let array = [CellItem.init(name: "Alamofire 网络请求", objectClass: NetWorkInterfaceDemo.self)
+                    ,CellItem.init(name: "RxSwift Demo", objectClass: RxSwiftDemoViewController.self)
+                    ]
         return array
     }
     
     override func viewDidLoad() {
-        self.view.addSubview(tableView)
+        view.addSubview(tableView)
     }
 }
 
 // MARK: Table View Delegate
 
 extension RootViewController: UITableViewDelegate {
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
         
         let obj: UIViewController? = dataArray[indexPath.row].objectClass.init()
         if let objValue = obj {
@@ -47,17 +50,17 @@ extension RootViewController: UITableViewDelegate {
 // MARK: Table View DataSource
 
 extension RootViewController: UITableViewDataSource {
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1;
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("RootCell", forIndexPath: indexPath) as UITableViewCell
-        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RootCell", for: indexPath) as UITableViewCell
+        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
         cell.textLabel?.text = dataArray[indexPath.row].name
         
         return cell
