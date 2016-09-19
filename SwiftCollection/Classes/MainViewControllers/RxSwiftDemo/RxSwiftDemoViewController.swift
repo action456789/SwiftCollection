@@ -130,7 +130,7 @@ class RxSwiftDemoViewController: UIViewController {
         // 当有observer在订阅一个BehaviorSubject的时候，它首先将会收到Observable上最近发送一个信号（或者是默认值），接着才会收到Observable上会发送的序列。
         
         // ## Variable
-        Variable是BehaviorSubject的封装，它和BehaviorSubject不同之处在于，不能向Variable发送.Complete和.Error，它会在生命周期结束被释放的时候自动发送.Complete。
+        // Variable是BehaviorSubject的封装，它和BehaviorSubject不同之处在于，不能向Variable发送.Complete和.Error，它会在生命周期结束被释放的时候自动发送.Complete。
     }
 
 }
