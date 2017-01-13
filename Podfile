@@ -13,10 +13,10 @@ end
 
 target 'SwiftCollection' do
     # swift 版 AFNetworking
-    # pod 'Alamofire', '~> 3.4'
+    pod 'Alamofire', '~> 4.0'
     
     # 简化 JSON 访问
-    # pod 'SwiftyJSON'
+    pod 'SwiftyJSON'
     
     # JSON 转 对象
     # pod 'ObjectMapper', '~> 1.3'
@@ -26,5 +26,6 @@ target 'SwiftCollection' do
     
     pod 'RxSwift',    '~> 3.0.0-beta.1'
     pod 'RxCocoa',    '~> 3.0.0-beta.1'
+    pod 'Charts'
 end
 
