@@ -6,7 +6,7 @@
 //  Copyright © 2016 SenKe. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class NetWorkInterfaceDemo: BaseViewController {
     override func viewDidLoad() {

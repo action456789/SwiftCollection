@@ -20,6 +20,8 @@
 		10B0966F1D4B454C00DC936F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B096691D4B454C00DC936F /* BaseViewController.swift */; };
 		10B096701D4B454C00DC936F /* CellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0966C1D4B454C00DC936F /* CellItem.swift */; };
 		10B096711D4B454C00DC936F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0966D1D4B454C00DC936F /* RootViewController.swift */; };
+		8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118A5AB1EA5AF3100E225CD /* AnimateDomeViewController.swift */; };
+		8118A5AE1EA5AF3100E225CD /* AnimateDomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */; };
 		B9599EA96E2041E8C326BDAA /* Pods_SwiftCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EA9FC448A8AAC42B6126F9 /* Pods_SwiftCollection.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		10B0966D1D4B454C00DC936F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		31EA9FC448A8AAC42B6126F9 /* Pods_SwiftCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E1E649E3EF910B5C2E0490 /* Pods-SwiftCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollection/Pods-SwiftCollection.debug.xcconfig"; sourceTree = "<group>"; };
+		8118A5AB1EA5AF3100E225CD /* AnimateDomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateDomeViewController.swift; sourceTree = "<group>"; };
+		8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimateDomeViewController.xib; sourceTree = "<group>"; };
 		ED55596BCB7D357D88C48AC3 /* Pods-SwiftCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollection/Pods-SwiftCollection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +174,7 @@
 		10B0966A1D4B454C00DC936F /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8118A5A61EA5AEC900E225CD /* 动画 */,
 				1055A0A91D8FBCA5008B04F6 /* RxSwiftDemo */,
 				10AF36AF1D4B47F50074587D /* NetWorkInterfaces */,
 			);
@@ -192,6 +197,15 @@
 				ED55596BCB7D357D88C48AC3 /* Pods-SwiftCollection.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8118A5A61EA5AEC900E225CD /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+				8118A5AB1EA5AF3100E225CD /* AnimateDomeViewController.swift */,
+				8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */,
+			);
+			path = "动画";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B096411D4B411C00DC936F /* LaunchScreen.storyboard in Resources */,
+				8118A5AE1EA5AF3100E225CD /* AnimateDomeViewController.xib in Resources */,
 				10B0963E1D4B411C00DC936F /* Assets.xcassets in Resources */,
 				10B0963C1D4B411C00DC936F /* Main.storyboard in Resources */,
 			);
@@ -325,6 +340,7 @@
 				10B0966E1D4B454C00DC936F /* BaseNavigationController.swift in Sources */,
 				106F1EBE1D4B56B800FCC04F /* BaseRequest.swift in Sources */,
 				10B096371D4B411C00DC936F /* AppDelegate.swift in Sources */,
+				8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */,
 				106F1EC01D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift in Sources */,
 				1034852C1DD4408C009F71CB /* TheOneAndOnly.swift in Sources */,
 				10B0966F1D4B454C00DC936F /* BaseViewController.swift in Sources */,

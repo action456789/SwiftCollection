@@ -23,6 +23,7 @@ class RootViewController: BaseViewController {
     var dataArray: [CellItem] {
         let array = [CellItem.init(name: "Alamofire 网络请求", objectClass: NetWorkInterfaceDemo.self)
                     ,CellItem.init(name: "RxSwift Demo", objectClass: RxSwiftDemoViewController.self)
+                    ,CellItem.init(name: "动画 Demo", objectClass: AnimateDomeViewController.self)
                     ]
         return array
     }
