@@ -6,16 +6,16 @@
 //  Copyright © 2016 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
+import struct Foundation.Date
 
-class DelaySink<ElementType, O: ObserverType>
+final class DelaySink<O: ObserverType>
     : Sink<O>
-    , ObserverType where O.E == ElementType {
+    , ObserverType {
     typealias E = O.E
     typealias Source = Observable<E>
     typealias DisposeKey = Bag<Disposable>.KeyType
     
-    private let _lock = NSRecursiveLock()
+    private let _lock = RecursiveLock()
 
     private let _dueTime: RxTimeInterval
     private let _scheduler: SchedulerType
@@ -33,10 +33,10 @@ class DelaySink<ElementType, O: ObserverType>
     private var _queue = Queue<(eventTime: RxTime, event: Event<E>)>(capacity: 0)
     private var _disposed = false
     
-    init(observer: O, dueTime: RxTimeInterval, scheduler: SchedulerType) {
+    init(observer: O, dueTime: RxTimeInterval, scheduler: SchedulerType, cancel: Cancelable) {
         _dueTime = dueTime
         _scheduler = scheduler
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
 
     // All of these complications in this method are caused by the fact that 
@@ -139,13 +139,13 @@ class DelaySink<ElementType, O: ObserverType>
         }
     }
     
-    func run(source: Source) -> Disposable {
-        _sourceSubscription.disposable = source.subscribeSafe(self)
+    func run(source: Observable<E>) -> Disposable {
+        _sourceSubscription.setDisposable(source.subscribe(self))
         return Disposables.create(_sourceSubscription, _cancelable)
     }
 }
 
-class Delay<Element>: Producer<Element> {
+final class Delay<Element>: Producer<Element> {
     private let _source: Observable<Element>
     private let _dueTime: RxTimeInterval
     private let _scheduler: SchedulerType
@@ -156,9 +156,9 @@ class Delay<Element>: Producer<Element> {
         _scheduler = scheduler
     }
 
-    override func run<O : ObserverType>(_ observer: O) -> Disposable where O.E == Element {
-        let sink = DelaySink(observer: observer, dueTime: _dueTime, scheduler: _scheduler)
-        sink.disposable = sink.run(source: _source)
-        return sink
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Element {
+        let sink = DelaySink(observer: observer, dueTime: _dueTime, scheduler: _scheduler, cancel: cancel)
+        let subscription = sink.run(source: _source)
+        return (sink: sink, subscription: subscription)
     }
 }

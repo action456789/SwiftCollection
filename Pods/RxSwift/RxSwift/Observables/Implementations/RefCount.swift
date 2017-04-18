@@ -1,14 +1,12 @@
 //
 //  RefCount.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Krunoslav Zaher on 3/5/15.
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
-
-class RefCountSink<CO: ConnectableObservableType, O: ObserverType>
+final class RefCountSink<CO: ConnectableObservableType, O: ObserverType>
     : Sink<O>
     , ObserverType where CO.E == O.E {
     typealias Element = O.E
@@ -16,13 +14,13 @@ class RefCountSink<CO: ConnectableObservableType, O: ObserverType>
     
     private let _parent: Parent
 
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
     
     func run() -> Disposable {
-        let subscription = _parent._source.subscribeSafe(self)
+        let subscription = _parent._source.subscribe(self)
         
         _parent._lock.lock(); defer { _parent._lock.unlock() } // {
             if _parent._count == 0 {
@@ -38,8 +36,12 @@ class RefCountSink<CO: ConnectableObservableType, O: ObserverType>
             subscription.dispose()
             self._parent._lock.lock(); defer { self._parent._lock.unlock() } // {
                 if self._parent._count == 1 {
-                    self._parent._connectableSubscription!.dispose()
                     self._parent._count = 0
+                    guard let connectableSubscription = self._parent._connectableSubscription else {
+                        return
+                    }
+
+                    connectableSubscription.dispose()
                     self._parent._connectableSubscription = nil
                 }
                 else if self._parent._count > 1 {
@@ -63,8 +65,8 @@ class RefCountSink<CO: ConnectableObservableType, O: ObserverType>
     }
 }
 
-class RefCount<CO: ConnectableObservableType>: Producer<CO.E> {
-    fileprivate let _lock = NSRecursiveLock()
+final class RefCount<CO: ConnectableObservableType>: Producer<CO.E> {
+    fileprivate let _lock = RecursiveLock()
     
     // state
     fileprivate var _count = 0
@@ -76,9 +78,9 @@ class RefCount<CO: ConnectableObservableType>: Producer<CO.E> {
         _source = source
     }
     
-    override func run<O: ObserverType>(_ observer: O) -> Disposable where O.E == CO.E {
-        let sink = RefCountSink(parent: self, observer: observer)
-        sink.disposable = sink.run()
-        return sink
+    override func run<O: ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == CO.E {
+        let sink = RefCountSink(parent: self, observer: observer, cancel: cancel)
+        let subscription = sink.run()
+        return (sink: sink, subscription: subscription)
     }
 }

@@ -1,14 +1,12 @@
 //
 //  Window.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Junior B. on 29/10/15.
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
-
-class WindowTimeCountSink<Element, O: ObserverType>
+final class WindowTimeCountSink<Element, O: ObserverType>
     : Sink<O>
     , ObserverType
     , LockOwnerType
@@ -18,7 +16,7 @@ class WindowTimeCountSink<Element, O: ObserverType>
     
     private let _parent: Parent
     
-    let _lock = NSRecursiveLock()
+    let _lock = RecursiveLock()
     
     private var _subject = PublishSubject<Element>()
     private var _count = 0
@@ -28,13 +26,13 @@ class WindowTimeCountSink<Element, O: ObserverType>
     private let _refCountDisposable: RefCountDisposable
     private let _groupDisposable = CompositeDisposable()
     
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
         
         let _ = _groupDisposable.insert(_timerD)
         
         _refCountDisposable = RefCountDisposable(disposable: _groupDisposable)
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
     
     func run() -> Disposable {
@@ -42,7 +40,7 @@ class WindowTimeCountSink<Element, O: ObserverType>
         forwardOn(.next(AddRef(source: _subject, refCount: _refCountDisposable).asObservable()))
         createTimer(_windowId)
         
-        let _ = _groupDisposable.insert(_parent._source.subscribeSafe(self))
+        let _ = _groupDisposable.insert(_parent._source.subscribe(self))
         return _refCountDisposable
     }
     
@@ -108,7 +106,7 @@ class WindowTimeCountSink<Element, O: ObserverType>
 
         _timerD.disposable = nextTimer
 
-        nextTimer.disposable = _parent._scheduler.scheduleRelative(windowId, dueTime: _parent._timeSpan) { previousWindowId in
+        let scheduledRelative = _parent._scheduler.scheduleRelative(windowId, dueTime: _parent._timeSpan) { previousWindowId in
             
             var newId = 0
             
@@ -127,10 +125,12 @@ class WindowTimeCountSink<Element, O: ObserverType>
             
             return Disposables.create()
         }
+
+        nextTimer.setDisposable(scheduledRelative)
     }
 }
 
-class WindowTimeCount<Element> : Producer<Observable<Element>> {
+final class WindowTimeCount<Element> : Producer<Observable<Element>> {
     
     fileprivate let _timeSpan: RxTimeInterval
     fileprivate let _count: Int
@@ -144,9 +144,9 @@ class WindowTimeCount<Element> : Producer<Observable<Element>> {
         _scheduler = scheduler
     }
     
-    override func run<O : ObserverType>(_ observer: O) -> Disposable where O.E == Observable<Element> {
-        let sink = WindowTimeCountSink(parent: self, observer: observer)
-        sink.disposable = sink.run()
-        return sink
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Observable<Element> {
+        let sink = WindowTimeCountSink(parent: self, observer: observer, cancel: cancel)
+        let subscription = sink.run()
+        return (sink: sink, subscription: subscription)
     }
 }

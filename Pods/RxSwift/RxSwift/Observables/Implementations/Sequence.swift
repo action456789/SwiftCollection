@@ -1,21 +1,19 @@
 //
 //  Sequence.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Krunoslav Zaher on 11/14/15.
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
-
-class ObservableSequenceSink<S: Sequence, O: ObserverType> : Sink<O> where S.Iterator.Element == O.E {
+final class ObservableSequenceSink<S: Sequence, O: ObserverType> : Sink<O> where S.Iterator.Element == O.E {
     typealias Parent = ObservableSequence<S>
 
     private let _parent: Parent
 
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
 
     func run() -> Disposable {
@@ -27,12 +25,13 @@ class ObservableSequenceSink<S: Sequence, O: ObserverType> : Sink<O> where S.Ite
             }
             else {
                 self.forwardOn(.completed)
+                self.dispose()
             }
         }
     }
 }
 
-class ObservableSequence<S: Sequence> : Producer<S.Iterator.Element> {
+final class ObservableSequence<S: Sequence> : Producer<S.Iterator.Element> {
     fileprivate let _elements: S
     fileprivate let _scheduler: ImmediateSchedulerType
 
@@ -41,9 +40,9 @@ class ObservableSequence<S: Sequence> : Producer<S.Iterator.Element> {
         _scheduler = scheduler
     }
 
-    override func subscribe<O : ObserverType>(_ observer: O) -> Disposable where O.E == E {
-        let sink = ObservableSequenceSink(parent: self, observer: observer)
-        sink.disposable = sink.run()
-        return sink
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == E {
+        let sink = ObservableSequenceSink(parent: self, observer: observer, cancel: cancel)
+        let subscription = sink.run()
+        return (sink: sink, subscription: subscription)
     }
 }

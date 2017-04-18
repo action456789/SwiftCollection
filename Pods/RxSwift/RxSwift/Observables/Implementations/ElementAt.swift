@@ -1,25 +1,24 @@
 //
 //  ElementAt.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Junior B. on 21/10/15.
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
 
-
-class ElementAtSink<SourceType, O: ObserverType> : Sink<O>, ObserverType where O.E == SourceType {
+final class ElementAtSink<O: ObserverType> : Sink<O>, ObserverType {
+    typealias SourceType = O.E
     typealias Parent = ElementAt<SourceType>
     
     let _parent: Parent
     var _i: Int
     
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
         _i = parent._index
         
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
     
     func on(_ event: Event<SourceType>) {
@@ -55,7 +54,7 @@ class ElementAtSink<SourceType, O: ObserverType> : Sink<O>, ObserverType where O
     }
 }
 
-class ElementAt<SourceType> : Producer<SourceType> {
+final class ElementAt<SourceType> : Producer<SourceType> {
     
     let _source: Observable<SourceType>
     let _throwOnEmpty: Bool
@@ -71,9 +70,9 @@ class ElementAt<SourceType> : Producer<SourceType> {
         self._throwOnEmpty = throwOnEmpty
     }
     
-    override func run<O: ObserverType>(_ observer: O) -> Disposable where O.E == SourceType {
-        let sink = ElementAtSink(parent: self, observer: observer)
-        sink.disposable = _source.subscribeSafe(sink)
-        return sink
+    override func run<O: ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == SourceType {
+        let sink = ElementAtSink(parent: self, observer: observer, cancel: cancel)
+        let subscription = _source.subscribe(sink)
+        return (sink: sink, subscription: subscription)
     }
 }

@@ -1,12 +1,10 @@
 //
 //  CombineLatest.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Krunoslav Zaher on 3/21/15.
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
-
-import Foundation
 
 protocol CombineLatestProtocol : class {
     func next(_ index: Int)
@@ -19,7 +17,7 @@ class CombineLatestSink<O: ObserverType>
     , CombineLatestProtocol {
     typealias Element = O.E
    
-    let _lock = NSRecursiveLock()
+    let _lock = RecursiveLock()
 
     private let _arity: Int
     private var _numberOfValues = 0
@@ -27,16 +25,16 @@ class CombineLatestSink<O: ObserverType>
     private var _hasValue: [Bool]
     private var _isDone: [Bool]
    
-    init(arity: Int, observer: O) {
+    init(arity: Int, observer: O, cancel: Cancelable) {
         _arity = arity
         _hasValue = [Bool](repeating: false, count: arity)
         _isDone = [Bool](repeating: false, count: arity)
         
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
     
     func getResult() throws -> Element {
-        abstractMethod()
+        rxAbstractMethod()
     }
     
     func next(_ index: Int) {
@@ -92,7 +90,7 @@ class CombineLatestSink<O: ObserverType>
     }
 }
 
-class CombineLatestObserver<ElementType>
+final class CombineLatestObserver<ElementType>
     : ObserverType
     , LockOwnerType
     , SynchronizedOnType {
@@ -101,12 +99,12 @@ class CombineLatestObserver<ElementType>
     
     private let _parent: CombineLatestProtocol
     
-    let _lock: NSRecursiveLock
+    let _lock: RecursiveLock
     private let _index: Int
     private let _this: Disposable
     private let _setLatestValue: ValueSetter
     
-    init(lock: NSRecursiveLock, parent: CombineLatestProtocol, index: Int, setLatestValue: @escaping ValueSetter, this: Disposable) {
+    init(lock: RecursiveLock, parent: CombineLatestProtocol, index: Int, setLatestValue: @escaping ValueSetter, this: Disposable) {
         _lock = lock
         _parent = parent
         _index = index

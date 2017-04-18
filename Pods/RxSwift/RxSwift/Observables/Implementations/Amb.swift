@@ -6,18 +6,16 @@
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
-
 enum AmbState {
     case neither
     case left
     case right
 }
 
-class AmbObserver<ElementType, O: ObserverType> : ObserverType where O.E == ElementType {
-    typealias Element = ElementType
-    typealias Parent = AmbSink<ElementType, O>
-    typealias This = AmbObserver<ElementType, O>
+final class AmbObserver<O: ObserverType> : ObserverType {
+    typealias Element = O.E
+    typealias Parent = AmbSink<O>
+    typealias This = AmbObserver<O>
     typealias Sink = (This, Event<Element>) -> Void
     
     fileprivate let _parent: Parent
@@ -26,7 +24,7 @@ class AmbObserver<ElementType, O: ObserverType> : ObserverType where O.E == Elem
     
     init(parent: Parent, cancel: Disposable, sink: @escaping Sink) {
 #if TRACE_RESOURCES
-        let _ = AtomicIncrement(&resourceCount)
+        let _ = Resources.incrementTotal()
 #endif
         
         _parent = parent
@@ -43,24 +41,25 @@ class AmbObserver<ElementType, O: ObserverType> : ObserverType where O.E == Elem
     
     deinit {
 #if TRACE_RESOURCES
-        let _ = AtomicDecrement(&resourceCount)
+        let _ = Resources.decrementTotal()
 #endif
     }
 }
 
-class AmbSink<ElementType, O: ObserverType> : Sink<O> where O.E == ElementType {
+final class AmbSink<O: ObserverType> : Sink<O> {
+    typealias ElementType = O.E
     typealias Parent = Amb<ElementType>
-    typealias AmbObserverType = AmbObserver<ElementType, O>
+    typealias AmbObserverType = AmbObserver<O>
 
     private let _parent: Parent
     
-    private let _lock = NSRecursiveLock()
+    private let _lock = RecursiveLock()
     // state
     private var _choice = AmbState.neither
     
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
     
     func run() -> Disposable {
@@ -70,8 +69,11 @@ class AmbSink<ElementType, O: ObserverType> : Sink<O> where O.E == ElementType {
         
         let forwardEvent = { (o: AmbObserverType, event: Event<ElementType>) -> Void in
             self.forwardOn(event)
+            if event.isStopEvent {
+                self.dispose()
+            }
         }
-        
+
         let decide = { (o: AmbObserverType, event: Event<ElementType>, me: AmbState, otherSubscription: Disposable) in
             self._lock.performLocked {
                 if self._choice == .neither {
@@ -98,14 +100,14 @@ class AmbSink<ElementType, O: ObserverType> : Sink<O> where O.E == ElementType {
             decide(o, e, .right, subscription1)
         }
         
-        subscription1.disposable = _parent._left.subscribe(sink1)
-        subscription2.disposable = _parent._right.subscribe(sink2)
+        subscription1.setDisposable(_parent._left.subscribe(sink1))
+        subscription2.setDisposable(_parent._right.subscribe(sink2))
         
         return disposeAll
     }
 }
 
-class Amb<Element>: Producer<Element> {
+final class Amb<Element>: Producer<Element> {
     fileprivate let _left: Observable<Element>
     fileprivate let _right: Observable<Element>
     
@@ -114,9 +116,9 @@ class Amb<Element>: Producer<Element> {
         _right = right
     }
     
-    override func run<O : ObserverType>(_ observer: O) -> Disposable where O.E == Element {
-        let sink = AmbSink(parent: self, observer: observer)
-        sink.disposable = sink.run()
-        return sink
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Element {
+        let sink = AmbSink(parent: self, observer: observer, cancel: cancel)
+        let subscription = sink.run()
+        return (sink: sink, subscription: subscription)
     }
 }

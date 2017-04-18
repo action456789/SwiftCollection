@@ -19,6 +19,16 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Result.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>RxCocoa.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -47,7 +57,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>0E6CC48CB3DB6CFA867124A97C90824B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>35074EA455D8AF8710700AEB1F2FA827</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>35A9257BB53FBB3B489658900BBBB35A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3983572D9C35F3399F1D5DF1C056AEC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6B2CFACD61429DBCF23BA4E09D7DBC38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7014A7103F2F5DA9C6E3AA653678E5A9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,7 +92,42 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7A139E7422DA1FCF418EE9A7FB4EEA71</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8275D62F55E9D2AC969BEC0750C34D73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0C3D2E52AA020CF22249E793957344C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A39B9781639B580BAF5DF8C0832103FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A4B8DCEF29FCDCDCAFD8D279AFCBC665</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C676FE03333B0559B1B24F150533720E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F307B842FF76B2DE6C55DB67C0885325</key>
 		<dict>
 			<key>primary</key>
 			<true/>

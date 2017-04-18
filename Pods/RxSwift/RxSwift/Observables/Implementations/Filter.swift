@@ -1,22 +1,20 @@
 //
 //  Filter.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Krunoslav Zaher on 2/17/15.
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
-
-class FilterSink<O : ObserverType>: Sink<O>, ObserverType {
+final class FilterSink<O : ObserverType>: Sink<O>, ObserverType {
     typealias Predicate = (Element) throws -> Bool
     typealias Element = O.E
     
     private let _predicate: Predicate
     
-    init(predicate: @escaping Predicate, observer: O) {
+    init(predicate: @escaping Predicate, observer: O, cancel: Cancelable) {
         _predicate = predicate
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
     
     func on(_ event: Event<Element>) {
@@ -39,7 +37,7 @@ class FilterSink<O : ObserverType>: Sink<O>, ObserverType {
     }
 }
 
-class Filter<Element> : Producer<Element> {
+final class Filter<Element> : Producer<Element> {
     typealias Predicate = (Element) throws -> Bool
     
     private let _source: Observable<Element>
@@ -50,9 +48,9 @@ class Filter<Element> : Producer<Element> {
         _predicate = predicate
     }
     
-    override func run<O: ObserverType>(_ observer: O) -> Disposable where O.E == Element {
-        let sink = FilterSink(predicate: _predicate, observer: observer)
-        sink.disposable = _source.subscribe(sink)
-        return sink
+    override func run<O: ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Element {
+        let sink = FilterSink(predicate: _predicate, observer: observer, cancel: cancel)
+        let subscription = _source.subscribe(sink)
+        return (sink: sink, subscription: subscription)
     }
 }

@@ -1,26 +1,23 @@
 //
 //  TakeLast.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Tomi Koskinen on 25/10/15.
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
-
-
-class TakeLastSink<ElementType, O: ObserverType> : Sink<O>, ObserverType where O.E == ElementType {
-    typealias Parent = TakeLast<ElementType>
-    typealias E = ElementType
+final class TakeLastSink<O: ObserverType> : Sink<O>, ObserverType {
+    typealias E = O.E
+    typealias Parent = TakeLast<E>
     
     private let _parent: Parent
     
-    private var _elements: Queue<ElementType>
+    private var _elements: Queue<E>
     
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
-        _elements = Queue<ElementType>(capacity: parent._count + 1)
-        super.init(observer: observer)
+        _elements = Queue<E>(capacity: parent._count + 1)
+        super.init(observer: observer, cancel: cancel)
     }
     
     func on(_ event: Event<E>) {
@@ -43,7 +40,7 @@ class TakeLastSink<ElementType, O: ObserverType> : Sink<O>, ObserverType where O
     }
 }
 
-class TakeLast<Element>: Producer<Element> {
+final class TakeLast<Element>: Producer<Element> {
     fileprivate let _source: Observable<Element>
     fileprivate let _count: Int
     
@@ -55,9 +52,9 @@ class TakeLast<Element>: Producer<Element> {
         _count = count
     }
     
-    override func run<O : ObserverType>(_ observer: O) -> Disposable where O.E == Element {
-        let sink = TakeLastSink(parent: self, observer: observer)
-        sink.disposable = _source.subscribe(sink)
-        return sink
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Element {
+        let sink = TakeLastSink(parent: self, observer: observer, cancel: cancel)
+        let subscription = _source.subscribe(sink)
+        return (sink: sink, subscription: subscription)
     }
 }

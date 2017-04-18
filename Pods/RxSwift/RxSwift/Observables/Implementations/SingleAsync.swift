@@ -1,23 +1,22 @@
 //
 //  SingleAsync.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Junior B. on 09/11/15.
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
-
-class SingleAsyncSink<ElementType, O: ObserverType> : Sink<O>, ObserverType where O.E == ElementType {
+fileprivate final class SingleAsyncSink<O: ObserverType> : Sink<O>, ObserverType {
+    typealias ElementType = O.E
     typealias Parent = SingleAsync<ElementType>
     typealias E = ElementType
     
     private let _parent: Parent
     private var _seenValue: Bool = false
     
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
     
     func on(_ event: Event<E>) {
@@ -35,29 +34,29 @@ class SingleAsyncSink<ElementType, O: ObserverType> : Sink<O>, ObserverType wher
                 return
             }
 
-            if _seenValue == false {
-                _seenValue = true
-                forwardOn(.next(value))
-            } else {
+            if _seenValue {
                 forwardOn(.error(RxError.moreThanOneElement))
                 dispose()
+                return
             }
-            
+
+            _seenValue = true
+            forwardOn(.next(value))
         case .error:
             forwardOn(event)
             dispose()
         case .completed:
-            if (!_seenValue) {
-                forwardOn(.error(RxError.noElements))
-            } else {
+            if (_seenValue) {
                 forwardOn(.completed)
+            } else {
+                forwardOn(.error(RxError.noElements))
             }
             dispose()
         }
     }
 }
 
-class SingleAsync<Element>: Producer<Element> {
+final class SingleAsync<Element>: Producer<Element> {
     typealias Predicate = (Element) throws -> Bool
     
     fileprivate let _source: Observable<Element>
@@ -68,9 +67,9 @@ class SingleAsync<Element>: Producer<Element> {
         _predicate = predicate
     }
     
-    override func run<O : ObserverType>(_ observer: O) -> Disposable where O.E == Element {
-        let sink = SingleAsyncSink(parent: self, observer: observer)
-        sink.disposable = _source.subscribe(sink)
-        return sink
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Element {
+        let sink = SingleAsyncSink(parent: self, observer: observer, cancel: cancel)
+        let subscription = _source.subscribe(sink)
+        return (sink: sink, subscription: subscription)
     }
 }

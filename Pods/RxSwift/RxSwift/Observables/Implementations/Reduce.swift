@@ -1,25 +1,23 @@
 //
 //  Reduce.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Krunoslav Zaher on 4/1/15.
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
-
-class ReduceSink<SourceType, AccumulateType, O: ObserverType> : Sink<O>, ObserverType {
+final class ReduceSink<SourceType, AccumulateType, O: ObserverType> : Sink<O>, ObserverType {
     typealias ResultType = O.E
     typealias Parent = Reduce<SourceType, AccumulateType, ResultType>
     
     private let _parent: Parent
     private var _accumulation: AccumulateType
     
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
         _accumulation = parent._seed
         
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
     
     func on(_ event: Event<SourceType>) {
@@ -50,7 +48,7 @@ class ReduceSink<SourceType, AccumulateType, O: ObserverType> : Sink<O>, Observe
     }
 }
 
-class Reduce<SourceType, AccumulateType, ResultType> : Producer<ResultType> {
+final class Reduce<SourceType, AccumulateType, ResultType> : Producer<ResultType> {
     typealias AccumulatorType = (AccumulateType, SourceType) throws -> AccumulateType
     typealias ResultSelectorType = (AccumulateType) throws -> ResultType
     
@@ -65,10 +63,10 @@ class Reduce<SourceType, AccumulateType, ResultType> : Producer<ResultType> {
         _accumulator = accumulator
         _mapResult = mapResult
     }
-    
-    override func run<O: ObserverType>(_ observer: O) -> Disposable where O.E == ResultType {
-        let sink = ReduceSink(parent: self, observer: observer)
-        sink.disposable = _source.subscribe(sink)
-        return sink
+
+    override func run<O: ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == ResultType {
+        let sink = ReduceSink(parent: self, observer: observer, cancel: cancel)
+        let subscription = _source.subscribe(sink)
+        return (sink: sink, subscription: subscription)
     }
 }

@@ -1,14 +1,12 @@
 //
 //  Range.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Krunoslav Zaher on 9/13/15.
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
-
-class RangeProducer<E: SignedInteger> : Producer<E> {
+final class RangeProducer<E: SignedInteger> : Producer<E> {
     fileprivate let _start: E
     fileprivate let _count: E
     fileprivate let _scheduler: ImmediateSchedulerType
@@ -27,21 +25,21 @@ class RangeProducer<E: SignedInteger> : Producer<E> {
         _scheduler = scheduler
     }
     
-    override func run<O : ObserverType>(_ observer: O) -> Disposable where O.E == E {
-        let sink = RangeSink(parent: self, observer: observer)
-        sink.disposable = sink.run()
-        return sink
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == E {
+        let sink = RangeSink(parent: self, observer: observer, cancel: cancel)
+        let subscription = sink.run()
+        return (sink: sink, subscription: subscription)
     }
 }
 
-class RangeSink<O: ObserverType> : Sink<O> where O.E: SignedInteger {
+final class RangeSink<O: ObserverType> : Sink<O> where O.E: SignedInteger {
     typealias Parent = RangeProducer<O.E>
     
     private let _parent: Parent
     
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
     
     func run() -> Disposable {

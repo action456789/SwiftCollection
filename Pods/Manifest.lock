@@ -1,27 +1,26 @@
 PODS:
-  - Alamofire (4.2.0)
-  - Charts (3.0.1):
-    - Charts/Core (= 3.0.1)
-  - Charts/Core (3.0.1)
-  - RxCocoa (3.0.0-beta.1):
-    - RxSwift (~> 3.0.0-beta.1)
-  - RxSwift (3.0.0-beta.1)
-  - SwiftyJSON (3.1.3)
+  - Alamofire (4.4.0)
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
+  - RxSwift (3.4.0)
+  - SnapKit (3.2.0)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.0)
+  - Alamofire
   - Charts
-  - RxCocoa (~> 3.0.0-beta.1)
-  - RxSwift (~> 3.0.0-beta.1)
+  - RxSwift
+  - SnapKit
   - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
-  Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
-  RxCocoa: 8cecf331302b8ae5381bbab1bccba4ede2eae6a8
-  RxSwift: 0823e8d7969c23bfa9ddfb2afa4881e424a1a710
-  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  RxSwift: 3789a1af753002a14edecdb698a2424624296a9c
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 07436fe126bdb7d5e7efa00a627f4141ba8e352b
+PODFILE CHECKSUM: 48c1776a89801dffda6ba48b51dd3a87846c65bf
 
 COCOAPODS: 1.1.1

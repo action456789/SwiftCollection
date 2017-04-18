@@ -6,22 +6,20 @@
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
-
 // count version
 
-class TakeCountSink<ElementType, O: ObserverType> : Sink<O>, ObserverType where O.E == ElementType {
-    typealias Parent = TakeCount<ElementType>
-    typealias E = ElementType
+final class TakeCountSink<O: ObserverType> : Sink<O>, ObserverType {
+    typealias E = O.E
+    typealias Parent = TakeCount<E>
     
     private let _parent: Parent
     
     private var _remaining: Int
     
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
         _remaining = parent._count
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
     
     func on(_ event: Event<E>) {
@@ -49,7 +47,7 @@ class TakeCountSink<ElementType, O: ObserverType> : Sink<O>, ObserverType where 
     
 }
 
-class TakeCount<Element>: Producer<Element> {
+final class TakeCount<Element>: Producer<Element> {
     fileprivate let _source: Observable<Element>
     fileprivate let _count: Int
     
@@ -61,16 +59,16 @@ class TakeCount<Element>: Producer<Element> {
         _count = count
     }
     
-    override func run<O : ObserverType>(_ observer: O) -> Disposable where O.E == Element {
-        let sink = TakeCountSink(parent: self, observer: observer)
-        sink.disposable = _source.subscribe(sink)
-        return sink
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Element {
+        let sink = TakeCountSink(parent: self, observer: observer, cancel: cancel)
+        let subscription = _source.subscribe(sink)
+        return (sink: sink, subscription: subscription)
     }
 }
 
 // time version
 
-class TakeTimeSink<ElementType, O: ObserverType>
+final class TakeTimeSink<ElementType, O: ObserverType>
     : Sink<O>
     , LockOwnerType
     , ObserverType
@@ -80,11 +78,11 @@ class TakeTimeSink<ElementType, O: ObserverType>
 
     fileprivate let _parent: Parent
     
-    let _lock = NSRecursiveLock()
+    let _lock = RecursiveLock()
     
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
     
     func on(_ event: Event<E>) {
@@ -123,7 +121,7 @@ class TakeTimeSink<ElementType, O: ObserverType>
     }
 }
 
-class TakeTime<Element> : Producer<Element> {
+final class TakeTime<Element> : Producer<Element> {
     typealias TimeInterval = RxTimeInterval
     
     fileprivate let _source: Observable<Element>
@@ -136,9 +134,9 @@ class TakeTime<Element> : Producer<Element> {
         _duration = duration
     }
     
-    override func run<O : ObserverType>(_ observer: O) -> Disposable where O.E == Element {
-        let sink = TakeTimeSink(parent: self, observer: observer)
-        sink.disposable = sink.run()
-        return sink
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Element {
+        let sink = TakeTimeSink(parent: self, observer: observer, cancel: cancel)
+        let subscription = sink.run()
+        return (sink: sink, subscription: subscription)
     }
 }
