@@ -3,8 +3,9 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'SwiftCollection' do
-    # swift 版 AFNetworking
-    pod 'Alamofire'
+    
+    pod 'Alamofire', '~> 4.4'
+    pod 'AlamofireNetworkActivityIndicator', '~> 2.0'
     
     # 简化 JSON 访问
     pod 'SwiftyJSON'

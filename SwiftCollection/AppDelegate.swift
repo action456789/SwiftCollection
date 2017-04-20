@@ -8,6 +8,9 @@
 
 import UIKit
 
+import Alamofire
+import AlamofireNetworkActivityIndicator
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -22,6 +25,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = nav;
         window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
+        
+        // Alamofire
+        let manager = NetworkReachabilityManager(host: "www.baidu.com")
+        manager?.listener = { status in
+            print("Network Status Changed: \(status)")
+        }
+        manager?.startListening()
+        
+        NetworkActivityIndicatorManager.shared.isEnabled = true
         
         return true
     }

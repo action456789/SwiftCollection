@@ -16,7 +16,7 @@ class AnimateDomeViewController: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func buttonClicked(_ sender: Any) {
-        UIView.animateKeyframes(withDuration: 0.5, delay: 0, options: .layoutSubviews, animations: {
+        UIView.animateKeyframes(withDuration: 0.5, delay: 0, options: .calculationModeCubic, animations: {
             /*
              withRelativeStartTime: 动画开始时间，是一个百分比，相对于总动画时间，这里是 0.5
              relativeDuration: 动画持续时间，是一个百分比，相对于总动画时间
@@ -33,7 +33,5 @@ class AnimateDomeViewController: UIViewController {
                 self.keyframeDemoButton.transform = CGAffineTransform.identity
             })
         }, completion: nil)
-        
-        UIView.setAnimationCurve(<#T##curve: UIViewAnimationCurve##UIViewAnimationCurve#>)
     }
 }

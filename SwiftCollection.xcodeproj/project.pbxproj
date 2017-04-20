@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1034852C1DD4408C009F71CB /* TheOneAndOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034852B1DD4408C009F71CB /* TheOneAndOnly.swift */; };
 		1055A0AF1D8FC550008B04F6 /* RxSwiftDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055A0AE1D8FC54F008B04F6 /* RxSwiftDemoViewController.swift */; };
-		106F1EBE1D4B56B800FCC04F /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F1EBD1D4B56B800FCC04F /* BaseRequest.swift */; };
 		106F1EC01D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F1EBF1D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift */; };
 		10A0A99D1D508DF9009DF5F3 /* IndexResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A0A99C1D508DF9009DF5F3 /* IndexResult.swift */; };
 		10B096371D4B411C00DC936F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B096361D4B411C00DC936F /* AppDelegate.swift */; };
@@ -29,7 +28,6 @@
 		1034852B1DD4408C009F71CB /* TheOneAndOnly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheOneAndOnly.swift; sourceTree = "<group>"; };
 		103485361DD4516F009F71CB /* ClassMethodTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClassMethodTest.playground; sourceTree = "<group>"; };
 		1055A0AE1D8FC54F008B04F6 /* RxSwiftDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftDemoViewController.swift; sourceTree = "<group>"; };
-		106F1EBD1D4B56B800FCC04F /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		106F1EBF1D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkInterfaceDemo.swift; sourceTree = "<group>"; };
 		10A0A99C1D508DF9009DF5F3 /* IndexResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexResult.swift; sourceTree = "<group>"; };
 		10B096331D4B411C00DC936F /* SwiftCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				106F1EBF1D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift */,
-				106F1EBD1D4B56B800FCC04F /* BaseRequest.swift */,
 				106F1EBA1D4B549400FCC04F /* Modal */,
 			);
 			path = NetWorkInterfaces;
@@ -338,7 +335,6 @@
 				10B096701D4B454C00DC936F /* CellItem.swift in Sources */,
 				10A0A99D1D508DF9009DF5F3 /* IndexResult.swift in Sources */,
 				10B0966E1D4B454C00DC936F /* BaseNavigationController.swift in Sources */,
-				106F1EBE1D4B56B800FCC04F /* BaseRequest.swift in Sources */,
 				10B096371D4B411C00DC936F /* AppDelegate.swift in Sources */,
 				8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */,
 				106F1EC01D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift in Sources */,

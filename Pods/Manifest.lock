@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.4.0)
+  - AlamofireNetworkActivityIndicator (2.1.0):
+    - Alamofire (~> 4.1)
   - Charts (3.0.2):
     - Charts/Core (= 3.0.2)
   - Charts/Core (3.0.2)
@@ -8,7 +10,8 @@ PODS:
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 4.4)
+  - AlamofireNetworkActivityIndicator (~> 2.0)
   - Charts
   - RxSwift
   - SnapKit
@@ -16,11 +19,12 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AlamofireNetworkActivityIndicator: 4716f6554bdfb9c7cf13b1e0e3af21163129690a
   Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
   RxSwift: 3789a1af753002a14edecdb698a2424624296a9c
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 48c1776a89801dffda6ba48b51dd3a87846c65bf
+PODFILE CHECKSUM: 8195f9e96f37308623098b793cf2fc544b680997
 
 COCOAPODS: 1.1.1
