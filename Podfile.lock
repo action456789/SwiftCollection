@@ -5,6 +5,12 @@ PODS:
   - Charts (3.0.2):
     - Charts/Core (= 3.0.2)
   - Charts/Core (3.0.2)
+  - DeviceKit (1.0.1)
+  - ReactiveCocoa (5.0.3):
+    - ReactiveSwift (~> 1.1)
+  - ReactiveSwift (1.1.1):
+    - Result (~> 3.2)
+  - Result (3.2.1)
   - RxSwift (3.4.0)
   - SnapKit (3.2.0)
   - SwiftyJSON (3.1.4)
@@ -13,6 +19,8 @@ DEPENDENCIES:
   - Alamofire (~> 4.4)
   - AlamofireNetworkActivityIndicator (~> 2.0)
   - Charts
+  - DeviceKit (~> 1.0)
+  - ReactiveCocoa (~> 5.0.0)
   - RxSwift
   - SnapKit
   - SwiftyJSON
@@ -21,10 +29,14 @@ SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   AlamofireNetworkActivityIndicator: 4716f6554bdfb9c7cf13b1e0e3af21163129690a
   Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  DeviceKit: 461e525867e48e725f41699c1cab3100df1258ff
+  ReactiveCocoa: 066a855f613fb72f68258771095805fdb10312d2
+  ReactiveSwift: 2489549e3231a6ff68ec99f3d320bb264f10ba0a
+  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
   RxSwift: 3789a1af753002a14edecdb698a2424624296a9c
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 8195f9e96f37308623098b793cf2fc544b680997
+PODFILE CHECKSUM: bd0fc715376ccfda3af2dcf2fa89523ba8a43826
 
 COCOAPODS: 1.1.1

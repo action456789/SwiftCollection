@@ -29,9 +29,9 @@ class Dog: Animal {
         print("dog eat bones")
     }
     
-    override static func sleep() {
-        print("dog sleep litter")
-    }
+//    override static func sleep() {
+//        print("dog sleep litter")
+//    }
     
 }
 

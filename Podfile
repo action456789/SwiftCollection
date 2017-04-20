@@ -16,9 +16,10 @@ target 'SwiftCollection' do
     # swift 版 Masonry
     pod 'SnapKit'
     
-#    pod 'RxCocoa',    '~> 3.0.0-beta.1'
-#    pod 'RxSwift',    '~> 3.0.0-beta.1'
     pod 'Charts'
+    pod 'DeviceKit', '~> 1.0'
+    pod 'ReactiveCocoa', '~> 5.0.0'
     pod 'RxSwift'
+
 end
 

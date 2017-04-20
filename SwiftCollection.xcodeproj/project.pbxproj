@@ -21,6 +21,8 @@
 		10B096711D4B454C00DC936F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0966D1D4B454C00DC936F /* RootViewController.swift */; };
 		8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118A5AB1EA5AF3100E225CD /* AnimateDomeViewController.swift */; };
 		8118A5AE1EA5AF3100E225CD /* AnimateDomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */; };
+		81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */; };
+		81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */; };
 		B9599EA96E2041E8C326BDAA /* Pods_SwiftCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EA9FC448A8AAC42B6126F9 /* Pods_SwiftCollection.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		80E1E649E3EF910B5C2E0490 /* Pods-SwiftCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollection/Pods-SwiftCollection.debug.xcconfig"; sourceTree = "<group>"; };
 		8118A5AB1EA5AF3100E225CD /* AnimateDomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateDomeViewController.swift; sourceTree = "<group>"; };
 		8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimateDomeViewController.xib; sourceTree = "<group>"; };
+		81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACDemoVC.swift; sourceTree = "<group>"; };
+		81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACDemoVC.xib; sourceTree = "<group>"; };
 		ED55596BCB7D357D88C48AC3 /* Pods-SwiftCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollection/Pods-SwiftCollection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +175,7 @@
 		10B0966A1D4B454C00DC936F /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				81F826B81EA8AA6400DD9928 /* RAC */,
 				8118A5A61EA5AEC900E225CD /* 动画 */,
 				1055A0A91D8FBCA5008B04F6 /* RxSwiftDemo */,
 				10AF36AF1D4B47F50074587D /* NetWorkInterfaces */,
@@ -203,6 +208,15 @@
 				8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */,
 			);
 			path = "动画";
+			sourceTree = "<group>";
+		};
+		81F826B81EA8AA6400DD9928 /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */,
+				81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */,
+			);
+			path = RAC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +284,7 @@
 			files = (
 				10B096411D4B411C00DC936F /* LaunchScreen.storyboard in Resources */,
 				8118A5AE1EA5AF3100E225CD /* AnimateDomeViewController.xib in Resources */,
+				81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */,
 				10B0963E1D4B411C00DC936F /* Assets.xcassets in Resources */,
 				10B0963C1D4B411C00DC936F /* Main.storyboard in Resources */,
 			);
@@ -334,6 +349,7 @@
 				1055A0AF1D8FC550008B04F6 /* RxSwiftDemoViewController.swift in Sources */,
 				10B096701D4B454C00DC936F /* CellItem.swift in Sources */,
 				10A0A99D1D508DF9009DF5F3 /* IndexResult.swift in Sources */,
+				81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */,
 				10B0966E1D4B454C00DC936F /* BaseNavigationController.swift in Sources */,
 				10B096371D4B411C00DC936F /* AppDelegate.swift in Sources */,
 				8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */,

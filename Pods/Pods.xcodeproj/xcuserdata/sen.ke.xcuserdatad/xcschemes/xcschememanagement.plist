@@ -19,7 +19,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DeviceKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SwiftCollection.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Result.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,27 +67,47 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>139AE4390CD626B293679B8ADA73FAB1</key>
+		<key>14F1E6AABD0D7BA116512C92AAC1B5BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>37BEE212A74DF98A2E42377A9839D7E2</key>
+		<key>3A3BD406AB6BB7A16DA9B6A90DB0C483</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4C923A7EDE3B23D51AD420C0004E3C16</key>
+		<key>4E9AC4A0D9223F6D78332EAC97DE834E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>68BE132D6CDF99A5ED656AD36CC07B9F</key>
+		<key>58FEAAF1AAFCADF5C2966A3B8EAB6197</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>93237C00263D35F94FCCCFB6B25DD940</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B74671AC4AD442223B677430EE6BBBF5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D027541065C6F2C806DDED929E012592</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DB40B3AB8727A2B1BE75DAF43CBA4D77</key>
 		<dict>
 			<key>primary</key>
 			<true/>
