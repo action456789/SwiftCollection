@@ -1,12 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RACDemoVC" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RACDemoVC" customModule="SwiftCollection" customModuleProvider="target">
             <connections>
+                <outlet property="commitButton" destination="fuy-0Z-gaR" id="d4J-y2-EgJ"/>
+                <outlet property="nameLabel" destination="0v6-q5-a3q" id="VXv-NI-xwa"/>
+                <outlet property="nameTextField" destination="0mN-SP-bSt" id="x5q-xP-kZI"/>
+                <outlet property="passworkTextField" destination="01P-eT-NOX" id="ikV-q7-mJR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +22,48 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuy-0Z-gaR">
+                    <rect key="frame" x="93" y="311" width="189" height="30"/>
+                    <state key="normal" title="登陆"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0mN-SP-bSt">
+                    <rect key="frame" x="93" y="206" width="189" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="01P-eT-NOX">
+                    <rect key="frame" x="93" y="254" width="189" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户登陆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v6-q5-a3q">
+                    <rect key="frame" x="117" y="162" width="141" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="141" id="QaW-qF-2LT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0mN-SP-bSt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="93" id="2tJ-L6-7tW"/>
+                <constraint firstItem="fuy-0Z-gaR" firstAttribute="top" secondItem="01P-eT-NOX" secondAttribute="bottom" constant="27" id="5zC-ON-VL7"/>
+                <constraint firstItem="01P-eT-NOX" firstAttribute="top" secondItem="0mN-SP-bSt" secondAttribute="bottom" constant="18" id="C5C-EA-qYq"/>
+                <constraint firstItem="01P-eT-NOX" firstAttribute="leading" secondItem="fuy-0Z-gaR" secondAttribute="leading" id="JdM-uF-xBn"/>
+                <constraint firstItem="0v6-q5-a3q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="162" id="LB6-FA-d76"/>
+                <constraint firstItem="0mN-SP-bSt" firstAttribute="top" secondItem="0v6-q5-a3q" secondAttribute="bottom" constant="23" id="Yw1-QK-0Ac"/>
+                <constraint firstItem="0v6-q5-a3q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="abH-zC-g7y"/>
+                <constraint firstItem="01P-eT-NOX" firstAttribute="trailing" secondItem="fuy-0Z-gaR" secondAttribute="trailing" id="kMh-be-HvO"/>
+                <constraint firstItem="0mN-SP-bSt" firstAttribute="trailing" secondItem="01P-eT-NOX" secondAttribute="trailing" id="llx-MX-DOE"/>
+                <constraint firstItem="0v6-q5-a3q" firstAttribute="centerX" secondItem="0mN-SP-bSt" secondAttribute="centerX" id="qA9-qy-qT0"/>
+                <constraint firstItem="0mN-SP-bSt" firstAttribute="leading" secondItem="01P-eT-NOX" secondAttribute="leading" id="r3A-Qf-C9h"/>
+            </constraints>
+            <point key="canvasLocation" x="-187.5" y="-265.5"/>
         </view>
     </objects>
 </document>

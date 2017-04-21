@@ -24,7 +24,8 @@ class RootViewController: BaseViewController {
         let array = [CellItem.init(name: "Alamofire 网络请求", objectClass: NetWorkInterfaceDemo.self)
                     ,CellItem.init(name: "RxSwift", objectClass: RxSwiftDemoViewController.self)
                     ,CellItem.init(name: "UIView 关键帧动画", objectClass: AnimateDomeViewController.self)
-                    ]
+                    ,CellItem.init(name: "RAC 测试", objectClass: RACDemoVC.self)
+                ]
         return array
     }
     

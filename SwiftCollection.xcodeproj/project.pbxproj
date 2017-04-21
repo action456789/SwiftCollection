@@ -23,6 +23,7 @@
 		8118A5AE1EA5AF3100E225CD /* AnimateDomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */; };
 		81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */; };
 		81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */; };
+		81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BE1EA8AE5000DD9928 /* Person.swift */; };
 		B9599EA96E2041E8C326BDAA /* Pods_SwiftCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EA9FC448A8AAC42B6126F9 /* Pods_SwiftCollection.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimateDomeViewController.xib; sourceTree = "<group>"; };
 		81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACDemoVC.swift; sourceTree = "<group>"; };
 		81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACDemoVC.xib; sourceTree = "<group>"; };
+		81F826BE1EA8AE5000DD9928 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		ED55596BCB7D357D88C48AC3 /* Pods-SwiftCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollection/Pods-SwiftCollection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,6 +217,7 @@
 			children = (
 				81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */,
 				81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */,
+				81F826BE1EA8AE5000DD9928 /* Person.swift */,
 			);
 			path = RAC;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				10B096711D4B454C00DC936F /* RootViewController.swift in Sources */,
 				1055A0AF1D8FC550008B04F6 /* RxSwiftDemoViewController.swift in Sources */,
 				10B096701D4B454C00DC936F /* CellItem.swift in Sources */,
+				81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */,
 				10A0A99D1D508DF9009DF5F3 /* IndexResult.swift in Sources */,
 				81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */,
 				10B0966E1D4B454C00DC936F /* BaseNavigationController.swift in Sources */,
