@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GraduallyTransparentVC" customModule="SwiftCollection" customModuleProvider="target">
+            <connections>
+                <outlet property="mainScrollView" destination="1J9-X0-OXB" id="XbR-ie-hV0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1J9-X0-OXB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1J9-X0-OXB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1HE-Q7-WdB"/>
+                <constraint firstAttribute="bottom" secondItem="1J9-X0-OXB" secondAttribute="bottom" id="3in-Mi-XYX"/>
+                <constraint firstItem="1J9-X0-OXB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3zu-w1-s3o"/>
+                <constraint firstItem="1J9-X0-OXB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="YI0-5C-iwM"/>
+                <constraint firstItem="1J9-X0-OXB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ahD-6I-hBE"/>
+                <constraint firstAttribute="trailing" secondItem="1J9-X0-OXB" secondAttribute="trailing" id="nh9-4h-xmL"/>
+            </constraints>
+            <point key="canvasLocation" x="-240.5" y="-82.5"/>
+        </view>
+        <viewController id="ard-7N-doz">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="gGM-k3-css"/>
+                <viewControllerLayoutGuide type="bottom" id="0RG-C9-etX"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="kCN-z3-qnt">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </view>
+        </viewController>
+    </objects>
+</document>

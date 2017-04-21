@@ -25,6 +25,7 @@ class RootViewController: BaseViewController {
                     ,CellItem.init(name: "RxSwift", objectClass: RxSwiftDemoViewController.self)
                     ,CellItem.init(name: "UIView 关键帧动画", objectClass: AnimateDomeViewController.self)
                     ,CellItem.init(name: "RAC 测试", objectClass: RACDemoVC.self)
+                    ,CellItem.init(name: "下拉透明导航栏", objectClass: GraduallyTransparentVC.self)
                 ]
         return array
     }

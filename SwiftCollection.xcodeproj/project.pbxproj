@@ -21,6 +21,9 @@
 		10B096711D4B454C00DC936F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0966D1D4B454C00DC936F /* RootViewController.swift */; };
 		8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118A5AB1EA5AF3100E225CD /* AnimateDomeViewController.swift */; };
 		8118A5AE1EA5AF3100E225CD /* AnimateDomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */; };
+		815645E41EAA4CD900788D69 /* GraduallyTransparentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815645E21EAA4CD900788D69 /* GraduallyTransparentVC.swift */; };
+		815645E51EAA4CD900788D69 /* GraduallyTransparentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815645E31EAA4CD900788D69 /* GraduallyTransparentVC.xib */; };
+		816A607F1EAA62C30005EE17 /* CommonMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A607E1EAA62C30005EE17 /* CommonMacro.swift */; };
 		81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */; };
 		81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */; };
 		81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BE1EA8AE5000DD9928 /* Person.swift */; };
@@ -47,6 +50,9 @@
 		80E1E649E3EF910B5C2E0490 /* Pods-SwiftCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollection/Pods-SwiftCollection.debug.xcconfig"; sourceTree = "<group>"; };
 		8118A5AB1EA5AF3100E225CD /* AnimateDomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateDomeViewController.swift; sourceTree = "<group>"; };
 		8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimateDomeViewController.xib; sourceTree = "<group>"; };
+		815645E21EAA4CD900788D69 /* GraduallyTransparentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraduallyTransparentVC.swift; sourceTree = "<group>"; };
+		815645E31EAA4CD900788D69 /* GraduallyTransparentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraduallyTransparentVC.xib; sourceTree = "<group>"; };
+		816A607E1EAA62C30005EE17 /* CommonMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonMacro.swift; sourceTree = "<group>"; };
 		81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACDemoVC.swift; sourceTree = "<group>"; };
 		81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACDemoVC.xib; sourceTree = "<group>"; };
 		81F826BE1EA8AE5000DD9928 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 		10B096491D4B414100DC936F /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				816A607E1EAA62C30005EE17 /* CommonMacro.swift */,
 				10B096361D4B411C00DC936F /* AppDelegate.swift */,
 				10B0963A1D4B411C00DC936F /* Main.storyboard */,
 				10B0963D1D4B411C00DC936F /* Assets.xcassets */,
@@ -177,6 +184,7 @@
 		10B0966A1D4B454C00DC936F /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				815645E11EAA4BE500788D69 /* 下拉透明导航栏 */,
 				81F826B81EA8AA6400DD9928 /* RAC */,
 				8118A5A61EA5AEC900E225CD /* 动画 */,
 				1055A0A91D8FBCA5008B04F6 /* RxSwiftDemo */,
@@ -210,6 +218,15 @@
 				8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */,
 			);
 			path = "动画";
+			sourceTree = "<group>";
+		};
+		815645E11EAA4BE500788D69 /* 下拉透明导航栏 */ = {
+			isa = PBXGroup;
+			children = (
+				815645E21EAA4CD900788D69 /* GraduallyTransparentVC.swift */,
+				815645E31EAA4CD900788D69 /* GraduallyTransparentVC.xib */,
+			);
+			path = "下拉透明导航栏";
 			sourceTree = "<group>";
 		};
 		81F826B81EA8AA6400DD9928 /* RAC */ = {
@@ -257,8 +274,9 @@
 				TargetAttributes = {
 					10B096321D4B411C00DC936F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 33UJTTK2KL;
+						DevelopmentTeam = DHZ4447J4K;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -288,6 +306,7 @@
 				10B096411D4B411C00DC936F /* LaunchScreen.storyboard in Resources */,
 				8118A5AE1EA5AF3100E225CD /* AnimateDomeViewController.xib in Resources */,
 				81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */,
+				815645E51EAA4CD900788D69 /* GraduallyTransparentVC.xib in Resources */,
 				10B0963E1D4B411C00DC936F /* Assets.xcassets in Resources */,
 				10B0963C1D4B411C00DC936F /* Main.storyboard in Resources */,
 			);
@@ -349,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B096711D4B454C00DC936F /* RootViewController.swift in Sources */,
+				816A607F1EAA62C30005EE17 /* CommonMacro.swift in Sources */,
 				1055A0AF1D8FC550008B04F6 /* RxSwiftDemoViewController.swift in Sources */,
 				10B096701D4B454C00DC936F /* CellItem.swift in Sources */,
 				81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */,
@@ -357,6 +377,7 @@
 				10B0966E1D4B454C00DC936F /* BaseNavigationController.swift in Sources */,
 				10B096371D4B411C00DC936F /* AppDelegate.swift in Sources */,
 				8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */,
+				815645E41EAA4CD900788D69 /* GraduallyTransparentVC.swift in Sources */,
 				106F1EC01D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift in Sources */,
 				1034852C1DD4408C009F71CB /* TheOneAndOnly.swift in Sources */,
 				10B0966F1D4B454C00DC936F /* BaseViewController.swift in Sources */,
@@ -481,11 +502,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 33UJTTK2KL;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DHZ4447J4K;
 				INFOPLIST_FILE = SwiftCollection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SenKe.SwiftCollection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sen.ke.SwiftCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -496,11 +520,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 33UJTTK2KL;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DHZ4447J4K;
 				INFOPLIST_FILE = SwiftCollection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SenKe.SwiftCollection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sen.ke.SwiftCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
