@@ -26,6 +26,7 @@ class RootViewController: BaseViewController {
                     ,CellItem.init(name: "UIView 关键帧动画", objectClass: AnimateDomeViewController.self)
                     ,CellItem.init(name: "RAC 测试", objectClass: RACDemoVC.self)
                     ,CellItem.init(name: "下拉透明导航栏", objectClass: GraduallyTransparentVC.self)
+                    ,CellItem.init(name: "水波纹", objectClass: WaterRipplesDemoVC.self)
                 ]
         return array
     }

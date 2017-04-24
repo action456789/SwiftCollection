@@ -15,9 +15,7 @@ class GraduallyTransparentVC: UIViewController {
 
     @IBOutlet weak var mainScrollView: UIScrollView!
     
-    var navbarImage: UIView {
-        return (navigationController?.navigationBar.subviews.first!)!
-    }
+    var navbarImage: UIView?
     
     override func viewDidLoad() {
         
@@ -27,10 +25,14 @@ class GraduallyTransparentVC: UIViewController {
         mainScrollView.delegate = self
         mainScrollView.contentSize = CGSize(width: ScreenWidth, height: ScreenHeight * 2)
         
+        // 获取导航栏图片 View
+        navbarImage = navigationController?.navigationBar.subviews.first!
+        
         createSubviews()
     }
     
     private func createSubviews() {
+        
         // 向 UIScrollView中增加子View，子View的宽高一定要知道，最好用代码布局
         let imageView = UIImageView(image: UIImage(named: "h7"))
         mainScrollView.addSubview(imageView)
@@ -49,6 +51,9 @@ extension GraduallyTransparentVC: UIScrollViewDelegate {
         let maxAlphaOffset: CGFloat = 200
         let offset: CGFloat = scrollView.contentOffset.y
         let alpha: CGFloat = (offset - minAlphaOffset) / (maxAlphaOffset - minAlphaOffset)
-        navbarImage.alpha = alpha
+        
+        if let image = navbarImage {
+            image.alpha = alpha
+        }
     }
 }
