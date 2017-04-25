@@ -26,7 +26,7 @@ class WaterRipplesView: UIView {
         return layer
     }()
     
-    lazy var timer: CADisplayLink = CADisplayLink(target: self, selector: #selector(self.timerEvent))
+    lazy var timer: CADisplayLink? = CADisplayLink(target: self, selector: #selector(self.timerEvent))
     
     let speed = CGFloat(2)
     
@@ -41,11 +41,16 @@ class WaterRipplesView: UIView {
         
         layer.addSublayer(fast)
         layer.addSublayer(slow)
-        timer.add(to: RunLoop.main, forMode: .commonModes)
+        timer?.add(to: RunLoop.main, forMode: .commonModes)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    deinit {
+        timer?.invalidate()
+        timer = nil
     }
     
     private func createWave(layer: CAShapeLayer, A: CGFloat, ω: CGFloat, φ: CGFloat, h: CGFloat) {
