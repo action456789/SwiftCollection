@@ -29,6 +29,7 @@ class StartButton: UIButton {
         }
     }
     
+    // TODO: maybe crash
     override func removeFromSuperview() {
         UIView.animate(withDuration: 1, animations: { 
             self.alpha = 0
