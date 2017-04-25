@@ -13,10 +13,6 @@ class WaterRipplesDemoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self .currentWave()
-    }
-    
-    func currentWave() {
         let waterView = WaterRipplesView(frame: CGRect(x: 0, y: 100, width: ScreenWidth, height: 100))
         view.addSubview(waterView)
     }

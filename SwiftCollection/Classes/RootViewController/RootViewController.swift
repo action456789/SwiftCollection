@@ -27,6 +27,7 @@ class RootViewController: BaseViewController {
                     ,CellItem.init(name: "RAC 测试", objectClass: RACDemoVC.self)
                     ,CellItem.init(name: "下拉透明导航栏", objectClass: GraduallyTransparentVC.self)
                     ,CellItem.init(name: "水波纹", objectClass: WaterRipplesDemoVC.self)
+                    ,CellItem.init(name: "雷达效果", objectClass: RadarViewController.self)
                 ]
         return array
     }
