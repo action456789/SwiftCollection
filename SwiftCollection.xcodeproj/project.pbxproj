@@ -32,6 +32,7 @@
 		81C208C61EAF207300F4C78F /* RadarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81C208C41EAF207300F4C78F /* RadarViewController.xib */; };
 		81C208C81EAF208600F4C78F /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208C71EAF208600F4C78F /* RadarView.swift */; };
 		81C208CC1EAF4F8600F4C78F /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208CB1EAF4F8600F4C78F /* StartButton.swift */; };
+		81C208CE1EAF57AE00F4C78F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208CD1EAF57AE00F4C78F /* UIImage+Extension.swift */; };
 		81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */; };
 		81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */; };
 		81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BE1EA8AE5000DD9928 /* Person.swift */; };
@@ -69,6 +70,7 @@
 		81C208C41EAF207300F4C78F /* RadarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadarViewController.xib; sourceTree = "<group>"; };
 		81C208C71EAF208600F4C78F /* RadarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarView.swift; sourceTree = "<group>"; };
 		81C208CB1EAF4F8600F4C78F /* StartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		81C208CD1EAF57AE00F4C78F /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACDemoVC.swift; sourceTree = "<group>"; };
 		81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACDemoVC.xib; sourceTree = "<group>"; };
 		81F826BE1EA8AE5000DD9928 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				81C208C01EAEFE1F00F4C78F /* UIColor+Extension.swift */,
+				81C208CD1EAF57AE00F4C78F /* UIImage+Extension.swift */,
 			);
 			path = Extentsion;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				81C208C51EAF207300F4C78F /* RadarViewController.swift in Sources */,
 				8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */,
 				815645E41EAA4CD900788D69 /* GraduallyTransparentVC.swift in Sources */,
+				81C208CE1EAF57AE00F4C78F /* UIImage+Extension.swift in Sources */,
 				106F1EC01D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift in Sources */,
 				1034852C1DD4408C009F71CB /* TheOneAndOnly.swift in Sources */,
 				81C208BA1EAE028800F4C78F /* WaterRipplesView.swift in Sources */,
