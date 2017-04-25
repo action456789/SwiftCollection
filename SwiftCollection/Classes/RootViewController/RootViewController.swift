@@ -28,6 +28,7 @@ class RootViewController: BaseViewController {
                     ,CellItem.init(name: "下拉透明导航栏", objectClass: GraduallyTransparentVC.self)
                     ,CellItem.init(name: "水波纹", objectClass: WaterRipplesDemoVC.self)
                     ,CellItem.init(name: "雷达效果", objectClass: RadarViewController.self)
+                    ,CellItem.init(name: "下雨与雪花效果", objectClass: Snow_RainDemeVC.self)
                 ]
         return array
     }

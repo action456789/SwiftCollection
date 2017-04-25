@@ -1,0 +1,21 @@
+//
+//  SnowView.swift
+//  SwiftCollection
+//
+//  Created by sen.ke on 2017/4/25.
+//  Copyright © 2017年 SenKe. All rights reserved.
+//
+
+import UIKit
+
+class SnowView: UIView {
+
+    /*
+    // Only override draw() if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func draw(_ rect: CGRect) {
+        // Drawing code
+    }
+    */
+
+}

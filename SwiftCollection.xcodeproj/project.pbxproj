@@ -33,6 +33,9 @@
 		81C208C81EAF208600F4C78F /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208C71EAF208600F4C78F /* RadarView.swift */; };
 		81C208CC1EAF4F8600F4C78F /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208CB1EAF4F8600F4C78F /* StartButton.swift */; };
 		81C208CE1EAF57AE00F4C78F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208CD1EAF57AE00F4C78F /* UIImage+Extension.swift */; };
+		81C208D11EAF5CE400F4C78F /* Snow_RainDemeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */; };
+		81C208D51EAF5E8C00F4C78F /* RainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D41EAF5E8C00F4C78F /* RainView.swift */; };
+		81C208D71EAF664100F4C78F /* SnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D61EAF664100F4C78F /* SnowView.swift */; };
 		81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */; };
 		81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */; };
 		81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BE1EA8AE5000DD9928 /* Person.swift */; };
@@ -71,6 +74,9 @@
 		81C208C71EAF208600F4C78F /* RadarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarView.swift; sourceTree = "<group>"; };
 		81C208CB1EAF4F8600F4C78F /* StartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 		81C208CD1EAF57AE00F4C78F /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snow_RainDemeVC.swift; sourceTree = "<group>"; };
+		81C208D41EAF5E8C00F4C78F /* RainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainView.swift; sourceTree = "<group>"; };
+		81C208D61EAF664100F4C78F /* SnowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowView.swift; sourceTree = "<group>"; };
 		81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACDemoVC.swift; sourceTree = "<group>"; };
 		81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACDemoVC.xib; sourceTree = "<group>"; };
 		81F826BE1EA8AE5000DD9928 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -203,6 +209,7 @@
 		10B0966A1D4B454C00DC936F /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				81C208CF1EAF5CBD00F4C78F /* 下雨和雪花效果 */,
 				81C208C21EAF205700F4C78F /* 雷达效果 */,
 				81C208B81EAE01F100F4C78F /* 水波纹 */,
 				815645E11EAA4BE500788D69 /* 下拉透明导航栏 */,
@@ -278,6 +285,16 @@
 				81C208C41EAF207300F4C78F /* RadarViewController.xib */,
 			);
 			path = "雷达效果";
+			sourceTree = "<group>";
+		};
+		81C208CF1EAF5CBD00F4C78F /* 下雨和雪花效果 */ = {
+			isa = PBXGroup;
+			children = (
+				81C208D41EAF5E8C00F4C78F /* RainView.swift */,
+				81C208D61EAF664100F4C78F /* SnowView.swift */,
+				81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */,
+			);
+			path = "下雨和雪花效果";
 			sourceTree = "<group>";
 		};
 		81F826B81EA8AA6400DD9928 /* RAC */ = {
@@ -431,7 +448,10 @@
 				10A0A99D1D508DF9009DF5F3 /* IndexResult.swift in Sources */,
 				81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */,
 				10B0966E1D4B454C00DC936F /* BaseNavigationController.swift in Sources */,
+				81C208D71EAF664100F4C78F /* SnowView.swift in Sources */,
+				81C208D51EAF5E8C00F4C78F /* RainView.swift in Sources */,
 				10B096371D4B411C00DC936F /* AppDelegate.swift in Sources */,
+				81C208D11EAF5CE400F4C78F /* Snow_RainDemeVC.swift in Sources */,
 				81C208C51EAF207300F4C78F /* RadarViewController.swift in Sources */,
 				8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */,
 				815645E41EAA4CD900788D69 /* GraduallyTransparentVC.swift in Sources */,
