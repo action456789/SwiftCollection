@@ -34,8 +34,7 @@
 		81C208CC1EAF4F8600F4C78F /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208CB1EAF4F8600F4C78F /* StartButton.swift */; };
 		81C208CE1EAF57AE00F4C78F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208CD1EAF57AE00F4C78F /* UIImage+Extension.swift */; };
 		81C208D11EAF5CE400F4C78F /* Snow_RainDemeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */; };
-		81C208D51EAF5E8C00F4C78F /* RainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D41EAF5E8C00F4C78F /* RainView.swift */; };
-		81C208D71EAF664100F4C78F /* SnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D61EAF664100F4C78F /* SnowView.swift */; };
+		81C208D51EAF5E8C00F4C78F /* EmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D41EAF5E8C00F4C78F /* EmitterView.swift */; };
 		81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */; };
 		81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */; };
 		81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BE1EA8AE5000DD9928 /* Person.swift */; };
@@ -75,8 +74,7 @@
 		81C208CB1EAF4F8600F4C78F /* StartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 		81C208CD1EAF57AE00F4C78F /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snow_RainDemeVC.swift; sourceTree = "<group>"; };
-		81C208D41EAF5E8C00F4C78F /* RainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainView.swift; sourceTree = "<group>"; };
-		81C208D61EAF664100F4C78F /* SnowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowView.swift; sourceTree = "<group>"; };
+		81C208D41EAF5E8C00F4C78F /* EmitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmitterView.swift; sourceTree = "<group>"; };
 		81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACDemoVC.swift; sourceTree = "<group>"; };
 		81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACDemoVC.xib; sourceTree = "<group>"; };
 		81F826BE1EA8AE5000DD9928 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -290,8 +288,7 @@
 		81C208CF1EAF5CBD00F4C78F /* 下雨和雪花效果 */ = {
 			isa = PBXGroup;
 			children = (
-				81C208D41EAF5E8C00F4C78F /* RainView.swift */,
-				81C208D61EAF664100F4C78F /* SnowView.swift */,
+				81C208D41EAF5E8C00F4C78F /* EmitterView.swift */,
 				81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */,
 			);
 			path = "下雨和雪花效果";
@@ -448,8 +445,7 @@
 				10A0A99D1D508DF9009DF5F3 /* IndexResult.swift in Sources */,
 				81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */,
 				10B0966E1D4B454C00DC936F /* BaseNavigationController.swift in Sources */,
-				81C208D71EAF664100F4C78F /* SnowView.swift in Sources */,
-				81C208D51EAF5E8C00F4C78F /* RainView.swift in Sources */,
+				81C208D51EAF5E8C00F4C78F /* EmitterView.swift in Sources */,
 				10B096371D4B411C00DC936F /* AppDelegate.swift in Sources */,
 				81C208D11EAF5CE400F4C78F /* Snow_RainDemeVC.swift in Sources */,
 				81C208C51EAF207300F4C78F /* RadarViewController.swift in Sources */,

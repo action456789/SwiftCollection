@@ -13,9 +13,9 @@ class Snow_RainDemeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let rainView = RainView(frame: CGRect(x: 0, y: 64, width: 100, height: 100))
+        let rainView = EmitterView(frame: CGRect(x: 0, y: 100, width: 400, height: 300))
         rainView.backgroundColor = UIColor.lightGray
         view.addSubview(rainView)
-        rainView.show()
+        rainView.alphaBoundRain()
     }
 }

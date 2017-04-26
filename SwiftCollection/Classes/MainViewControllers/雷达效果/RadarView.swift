@@ -12,16 +12,19 @@ import UIKit
 
 class RadarView: UIView {
     
-    let pulsingCount = 6
-    let animationDuration: Double = 6
-    var animateLayers = [CAShapeLayer]()
+    var pulsingCount = 6
+    var animationDuration: Double = 6
     
+    private var animateLayers = [CAShapeLayer]()
+    
+    // for animation of star button
     private var isPulsingAnimating = false
     private var isStarAnimating = false
     
-    let itemSize = CGSize(width: 44, height: 44)
-    var items = [StartButton]()
-    var timer: Timer?
+    var itemSize = CGSize(width: 44, height: 44)
+    
+    private var items = [StartButton]()
+    private var timer: Timer?
     
 
     override init(frame: CGRect) {
