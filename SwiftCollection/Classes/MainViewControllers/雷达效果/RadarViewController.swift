@@ -19,5 +19,4 @@ class RadarViewController: UIViewController {
         radarView.startPulsingAnimate()
         radarView.startStarAnim()
     }
-
 }

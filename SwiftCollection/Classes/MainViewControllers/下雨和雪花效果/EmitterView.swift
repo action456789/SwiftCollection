@@ -10,7 +10,7 @@ import UIKit
 
 class EmitterView: UIView {
 
-    private lazy var emitterLayer: CAEmitterLayer = {
+    fileprivate lazy var emitterLayer: CAEmitterLayer = {
         let emitterLayer = CAEmitterLayer()
         emitterLayer.emitterShape = kCAEmitterLayerLine
         emitterLayer.emitterMode = kCAEmitterLayerSurface
@@ -20,7 +20,7 @@ class EmitterView: UIView {
         return emitterLayer
     }()
     
-    private lazy var alphaImageView: UIImageView = {
+    fileprivate lazy var alphaImageView: UIImageView = {
         let alphaImageView = UIImageView(image: UIImage(named: "alpha"))
         alphaImageView.contentMode = .scaleToFill
         alphaImageView.frame = self.bounds
@@ -41,7 +41,10 @@ class EmitterView: UIView {
     deinit {
         
     }
-    
+}
+
+/// Mark -
+extension EmitterView {
     public func rain() {
         let rainflake = CAEmitterCell()
         rainflake.birthRate = 25.0
@@ -75,7 +78,10 @@ class EmitterView: UIView {
         // 添加动画
         emitterLayer.emitterCells = [snowflake]
     }
-    
+}
+
+/// Mark -
+extension EmitterView {
     public func alphaBoundRain() {
         self.mask = alphaImageView
         rain()
@@ -86,5 +92,3 @@ class EmitterView: UIView {
         snow()
     }
 }
-
-

@@ -176,8 +176,8 @@
 				103485351DD4513E009F71CB /* ClassMethods */,
 				1034852A1DD44051009F71CB /* Singleton */,
 				10B096671D4B454C00DC936F /* BaseClasses */,
-				10B0966A1D4B454C00DC936F /* MainViewControllers */,
 				10B0966B1D4B454C00DC936F /* RootViewController */,
+				10B0966A1D4B454C00DC936F /* MainViewControllers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

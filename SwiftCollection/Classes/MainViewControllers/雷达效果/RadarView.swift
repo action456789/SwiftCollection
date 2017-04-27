@@ -18,13 +18,13 @@ class RadarView: UIView {
     private var animateLayers = [CAShapeLayer]()
     
     // for animation of star button
-    private var isPulsingAnimating = false
-    private var isStarAnimating = false
+    fileprivate var isPulsingAnimating = false
+    fileprivate var isStarAnimating = false
     
     var itemSize = CGSize(width: 44, height: 44)
     
-    private var items = [StartButton]()
-    private var timer: Timer?
+    fileprivate var items = [StartButton]()
+    fileprivate var timer: Timer?
     
 
     override init(frame: CGRect) {
@@ -127,7 +127,10 @@ class RadarView: UIView {
         
         layer.add(animGroup, forKey: "pulsing")
     }
-    
+}
+
+/// Mark - 随机生成星星 button
+extension RadarView {
     //MARK: - 在圆形范围内随机生成 button
     
     // 在圆形范围内随机生成坐标点
