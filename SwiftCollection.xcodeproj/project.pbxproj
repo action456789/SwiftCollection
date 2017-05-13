@@ -21,9 +21,19 @@
 		10B096711D4B454C00DC936F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0966D1D4B454C00DC936F /* RootViewController.swift */; };
 		8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118A5AB1EA5AF3100E225CD /* AnimateDomeViewController.swift */; };
 		8118A5AE1EA5AF3100E225CD /* AnimateDomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */; };
+		814C86EA1EB8373F00FB0F40 /* PersistentTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814C86E91EB8373F00FB0F40 /* PersistentTool.swift */; };
 		815645E41EAA4CD900788D69 /* GraduallyTransparentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815645E21EAA4CD900788D69 /* GraduallyTransparentVC.swift */; };
 		815645E51EAA4CD900788D69 /* GraduallyTransparentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815645E31EAA4CD900788D69 /* GraduallyTransparentVC.xib */; };
 		816A607F1EAA62C30005EE17 /* CommonMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A607E1EAA62C30005EE17 /* CommonMacro.swift */; };
+		817F0CDA1EB2DCA6001500E9 /* LCSDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F0CD91EB2DCA6001500E9 /* LCSDemoViewController.swift */; };
+		819C2AAA1EC6F61C00C3CAF4 /* BisetSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C2AA91EC6F61C00C3CAF4 /* BisetSlideViewController.swift */; };
+		819C2AAD1EC6FF7900C3CAF4 /* CommonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C2AAC1EC6FF7900C3CAF4 /* CommonFunc.swift */; };
+		819C2AB71EC717DB00C3CAF4 /* BisetSlideItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C2AB61EC717DB00C3CAF4 /* BisetSlideItemView.swift */; };
+		819C2ABB1EC7185100C3CAF4 /* BisetSlideItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819C2ABA1EC7185100C3CAF4 /* BisetSlideItemView.xib */; };
+		819C2ABE1EC73B8600C3CAF4 /* BitSlideVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C2ABC1EC73B8600C3CAF4 /* BitSlideVC1.swift */; };
+		819C2ABF1EC73B8600C3CAF4 /* BitSlideVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819C2ABD1EC73B8600C3CAF4 /* BitSlideVC1.xib */; };
+		819C2AC21EC73B9D00C3CAF4 /* BitSlideVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C2AC01EC73B9D00C3CAF4 /* BitSlideVC2.swift */; };
+		819C2AC31EC73B9D00C3CAF4 /* BitSlideVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819C2AC11EC73B9D00C3CAF4 /* BitSlideVC2.xib */; };
 		81C208BA1EAE028800F4C78F /* WaterRipplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208B91EAE028800F4C78F /* WaterRipplesView.swift */; };
 		81C208BD1EAE02A800F4C78F /* WaterRipplesDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208BB1EAE02A800F4C78F /* WaterRipplesDemoVC.swift */; };
 		81C208BE1EAE02A800F4C78F /* WaterRipplesDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81C208BC1EAE02A800F4C78F /* WaterRipplesDemoVC.xib */; };
@@ -35,6 +45,8 @@
 		81C208CE1EAF57AE00F4C78F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208CD1EAF57AE00F4C78F /* UIImage+Extension.swift */; };
 		81C208D11EAF5CE400F4C78F /* Snow_RainDemeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */; };
 		81C208D51EAF5E8C00F4C78F /* EmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D41EAF5E8C00F4C78F /* EmitterView.swift */; };
+		81E092721EC6EADB0060F250 /* BisetSlideDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E092711EC6EADB0060F250 /* BisetSlideDemoVC.swift */; };
+		81E0927B1EC6F0E80060F250 /* BisetSlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E092781EC6F0E80060F250 /* BisetSlideViewController.xib */; };
 		81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */; };
 		81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */; };
 		81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BE1EA8AE5000DD9928 /* Person.swift */; };
@@ -61,9 +73,19 @@
 		80E1E649E3EF910B5C2E0490 /* Pods-SwiftCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollection/Pods-SwiftCollection.debug.xcconfig"; sourceTree = "<group>"; };
 		8118A5AB1EA5AF3100E225CD /* AnimateDomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateDomeViewController.swift; sourceTree = "<group>"; };
 		8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimateDomeViewController.xib; sourceTree = "<group>"; };
+		814C86E91EB8373F00FB0F40 /* PersistentTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentTool.swift; sourceTree = "<group>"; };
 		815645E21EAA4CD900788D69 /* GraduallyTransparentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraduallyTransparentVC.swift; sourceTree = "<group>"; };
 		815645E31EAA4CD900788D69 /* GraduallyTransparentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraduallyTransparentVC.xib; sourceTree = "<group>"; };
 		816A607E1EAA62C30005EE17 /* CommonMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonMacro.swift; sourceTree = "<group>"; };
+		817F0CD91EB2DCA6001500E9 /* LCSDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCSDemoViewController.swift; sourceTree = "<group>"; };
+		819C2AA91EC6F61C00C3CAF4 /* BisetSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideViewController.swift; sourceTree = "<group>"; };
+		819C2AAC1EC6FF7900C3CAF4 /* CommonFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFunc.swift; sourceTree = "<group>"; };
+		819C2AB61EC717DB00C3CAF4 /* BisetSlideItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideItemView.swift; sourceTree = "<group>"; };
+		819C2ABA1EC7185100C3CAF4 /* BisetSlideItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BisetSlideItemView.xib; sourceTree = "<group>"; };
+		819C2ABC1EC73B8600C3CAF4 /* BitSlideVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitSlideVC1.swift; sourceTree = "<group>"; };
+		819C2ABD1EC73B8600C3CAF4 /* BitSlideVC1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BitSlideVC1.xib; sourceTree = "<group>"; };
+		819C2AC01EC73B9D00C3CAF4 /* BitSlideVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitSlideVC2.swift; sourceTree = "<group>"; };
+		819C2AC11EC73B9D00C3CAF4 /* BitSlideVC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BitSlideVC2.xib; sourceTree = "<group>"; };
 		81C208B91EAE028800F4C78F /* WaterRipplesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterRipplesView.swift; sourceTree = "<group>"; };
 		81C208BB1EAE02A800F4C78F /* WaterRipplesDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterRipplesDemoVC.swift; sourceTree = "<group>"; };
 		81C208BC1EAE02A800F4C78F /* WaterRipplesDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterRipplesDemoVC.xib; sourceTree = "<group>"; };
@@ -75,6 +97,8 @@
 		81C208CD1EAF57AE00F4C78F /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snow_RainDemeVC.swift; sourceTree = "<group>"; };
 		81C208D41EAF5E8C00F4C78F /* EmitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmitterView.swift; sourceTree = "<group>"; };
+		81E092711EC6EADB0060F250 /* BisetSlideDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideDemoVC.swift; sourceTree = "<group>"; };
+		81E092781EC6F0E80060F250 /* BisetSlideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BisetSlideViewController.xib; sourceTree = "<group>"; };
 		81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACDemoVC.swift; sourceTree = "<group>"; };
 		81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACDemoVC.xib; sourceTree = "<group>"; };
 		81F826BE1EA8AE5000DD9928 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -172,6 +196,8 @@
 		10B096481D4B414100DC936F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				819C2AAB1EC6FF4600C3CAF4 /* Common */,
+				814C86E81EB8372500FB0F40 /* Cache */,
 				81C208BF1EAEFE0200F4C78F /* Extentsion */,
 				103485351DD4513E009F71CB /* ClassMethods */,
 				1034852A1DD44051009F71CB /* Singleton */,
@@ -207,6 +233,8 @@
 		10B0966A1D4B454C00DC936F /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				81CE2EDB1EC6E12B0036D986 /* BisetSlideTabbar */,
+				817F0CD81EB2DC92001500E9 /* 最小子序列 */,
 				81C208CF1EAF5CBD00F4C78F /* 下雨和雪花效果 */,
 				81C208C21EAF205700F4C78F /* 雷达效果 */,
 				81C208B81EAE01F100F4C78F /* 水波纹 */,
@@ -246,6 +274,14 @@
 			path = "动画";
 			sourceTree = "<group>";
 		};
+		814C86E81EB8372500FB0F40 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				814C86E91EB8373F00FB0F40 /* PersistentTool.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		815645E11EAA4BE500788D69 /* 下拉透明导航栏 */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +289,22 @@
 				815645E31EAA4CD900788D69 /* GraduallyTransparentVC.xib */,
 			);
 			path = "下拉透明导航栏";
+			sourceTree = "<group>";
+		};
+		817F0CD81EB2DC92001500E9 /* 最小子序列 */ = {
+			isa = PBXGroup;
+			children = (
+				817F0CD91EB2DCA6001500E9 /* LCSDemoViewController.swift */,
+			);
+			path = "最小子序列";
+			sourceTree = "<group>";
+		};
+		819C2AAB1EC6FF4600C3CAF4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				819C2AAC1EC6FF7900C3CAF4 /* CommonFunc.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		81C208B81EAE01F100F4C78F /* 水波纹 */ = {
@@ -292,6 +344,30 @@
 				81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */,
 			);
 			path = "下雨和雪花效果";
+			sourceTree = "<group>";
+		};
+		81CE2EDB1EC6E12B0036D986 /* BisetSlideTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				81E092751EC6F0E80060F250 /* Core */,
+				81E092711EC6EADB0060F250 /* BisetSlideDemoVC.swift */,
+				819C2ABC1EC73B8600C3CAF4 /* BitSlideVC1.swift */,
+				819C2ABD1EC73B8600C3CAF4 /* BitSlideVC1.xib */,
+				819C2AC01EC73B9D00C3CAF4 /* BitSlideVC2.swift */,
+				819C2AC11EC73B9D00C3CAF4 /* BitSlideVC2.xib */,
+			);
+			path = BisetSlideTabbar;
+			sourceTree = "<group>";
+		};
+		81E092751EC6F0E80060F250 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				819C2AB61EC717DB00C3CAF4 /* BisetSlideItemView.swift */,
+				819C2ABA1EC7185100C3CAF4 /* BisetSlideItemView.xib */,
+				81E092781EC6F0E80060F250 /* BisetSlideViewController.xib */,
+				819C2AA91EC6F61C00C3CAF4 /* BisetSlideViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		81F826B81EA8AA6400DD9928 /* RAC */ = {
@@ -368,14 +444,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819C2ABF1EC73B8600C3CAF4 /* BitSlideVC1.xib in Resources */,
 				10B096411D4B411C00DC936F /* LaunchScreen.storyboard in Resources */,
 				81C208C61EAF207300F4C78F /* RadarViewController.xib in Resources */,
 				8118A5AE1EA5AF3100E225CD /* AnimateDomeViewController.xib in Resources */,
+				81E0927B1EC6F0E80060F250 /* BisetSlideViewController.xib in Resources */,
 				81C208BE1EAE02A800F4C78F /* WaterRipplesDemoVC.xib in Resources */,
 				81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */,
 				815645E51EAA4CD900788D69 /* GraduallyTransparentVC.xib in Resources */,
+				819C2ABB1EC7185100C3CAF4 /* BisetSlideItemView.xib in Resources */,
 				10B0963E1D4B411C00DC936F /* Assets.xcassets in Resources */,
 				10B0963C1D4B411C00DC936F /* Main.storyboard in Resources */,
+				819C2AC31EC73B9D00C3CAF4 /* BitSlideVC2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +517,7 @@
 				10B096711D4B454C00DC936F /* RootViewController.swift in Sources */,
 				816A607F1EAA62C30005EE17 /* CommonMacro.swift in Sources */,
 				81C208CC1EAF4F8600F4C78F /* StartButton.swift in Sources */,
+				819C2AB71EC717DB00C3CAF4 /* BisetSlideItemView.swift in Sources */,
 				1055A0AF1D8FC550008B04F6 /* RxSwiftDemoViewController.swift in Sources */,
 				81C208BD1EAE02A800F4C78F /* WaterRipplesDemoVC.swift in Sources */,
 				81C208C11EAEFE1F00F4C78F /* UIColor+Extension.swift in Sources */,
@@ -445,15 +526,22 @@
 				10A0A99D1D508DF9009DF5F3 /* IndexResult.swift in Sources */,
 				81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */,
 				10B0966E1D4B454C00DC936F /* BaseNavigationController.swift in Sources */,
+				819C2ABE1EC73B8600C3CAF4 /* BitSlideVC1.swift in Sources */,
 				81C208D51EAF5E8C00F4C78F /* EmitterView.swift in Sources */,
+				819C2AAD1EC6FF7900C3CAF4 /* CommonFunc.swift in Sources */,
 				10B096371D4B411C00DC936F /* AppDelegate.swift in Sources */,
 				81C208D11EAF5CE400F4C78F /* Snow_RainDemeVC.swift in Sources */,
 				81C208C51EAF207300F4C78F /* RadarViewController.swift in Sources */,
 				8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */,
+				819C2AAA1EC6F61C00C3CAF4 /* BisetSlideViewController.swift in Sources */,
+				814C86EA1EB8373F00FB0F40 /* PersistentTool.swift in Sources */,
 				815645E41EAA4CD900788D69 /* GraduallyTransparentVC.swift in Sources */,
 				81C208CE1EAF57AE00F4C78F /* UIImage+Extension.swift in Sources */,
 				106F1EC01D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift in Sources */,
 				1034852C1DD4408C009F71CB /* TheOneAndOnly.swift in Sources */,
+				819C2AC21EC73B9D00C3CAF4 /* BitSlideVC2.swift in Sources */,
+				817F0CDA1EB2DCA6001500E9 /* LCSDemoViewController.swift in Sources */,
+				81E092721EC6EADB0060F250 /* BisetSlideDemoVC.swift in Sources */,
 				81C208BA1EAE028800F4C78F /* WaterRipplesView.swift in Sources */,
 				81C208C81EAF208600F4C78F /* RadarView.swift in Sources */,
 				10B0966F1D4B454C00DC936F /* BaseViewController.swift in Sources */,

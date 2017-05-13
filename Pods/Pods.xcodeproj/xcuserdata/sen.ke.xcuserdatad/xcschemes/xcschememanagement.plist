@@ -2,6 +2,69 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AlamofireNetworkActivityIndicator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Charts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DeviceKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SwiftCollection.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Result.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftLCS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>115FA0D867E07C04838493890DBD8D29</key>
@@ -9,22 +72,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>14F1E6AABD0D7BA116512C92AAC1B5BA</key>
+		<key>22E0290E6FDD0D21D5C2AA9646680C57</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3A3BD406AB6BB7A16DA9B6A90DB0C483</key>
+		<key>29A97D5B77060BD9E2F15E0D7C7C46EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4E9AC4A0D9223F6D78332EAC97DE834E</key>
+		<key>511A3B288DD029706F62536CA64181C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>58FEAAF1AAFCADF5C2966A3B8EAB6197</key>
+		<key>87AFC892BA336E968E9EF246919D9F8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -34,7 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>93237C00263D35F94FCCCFB6B25DD940</key>
+		<key>A2F12A456BEE8E935AFF106CF4323A88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5A5FC5BDD549887C5D55FB6E14BBBA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -44,17 +112,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D027541065C6F2C806DDED929E012592</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DB40B3AB8727A2B1BE75DAF43CBA4D77</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>F307B842FF76B2DE6C55DB67C0885325</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBA0B65BA3DCDDD51A841E24FB318D1E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FEB195B2F2FB6BB080289378CAF8A4CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -20,6 +20,9 @@ target 'SwiftCollection' do
     pod 'DeviceKit', '~> 1.0'
     pod 'ReactiveCocoa', '~> 5.0.0'
     pod 'RxSwift'
+    
+    # 最小子序列
+    pod 'SwiftLCS'
 
 end
 
