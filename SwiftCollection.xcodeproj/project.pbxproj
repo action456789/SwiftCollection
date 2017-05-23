@@ -21,15 +21,16 @@
 		10B096711D4B454C00DC936F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0966D1D4B454C00DC936F /* RootViewController.swift */; };
 		8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118A5AB1EA5AF3100E225CD /* AnimateDomeViewController.swift */; };
 		8118A5AE1EA5AF3100E225CD /* AnimateDomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */; };
+		813DB4951ED3E37200AAC6A9 /* BisetSlideItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DB4911ED3E37200AAC6A9 /* BisetSlideItemView.swift */; };
+		813DB4961ED3E37200AAC6A9 /* BisetSlideItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813DB4921ED3E37200AAC6A9 /* BisetSlideItemView.xib */; };
+		813DB4971ED3E37200AAC6A9 /* BisetSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DB4931ED3E37200AAC6A9 /* BisetSlideViewController.swift */; };
+		813DB4981ED3E37200AAC6A9 /* BisetSlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813DB4941ED3E37200AAC6A9 /* BisetSlideViewController.xib */; };
 		814C86EA1EB8373F00FB0F40 /* PersistentTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814C86E91EB8373F00FB0F40 /* PersistentTool.swift */; };
 		815645E41EAA4CD900788D69 /* GraduallyTransparentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815645E21EAA4CD900788D69 /* GraduallyTransparentVC.swift */; };
 		815645E51EAA4CD900788D69 /* GraduallyTransparentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815645E31EAA4CD900788D69 /* GraduallyTransparentVC.xib */; };
 		816A607F1EAA62C30005EE17 /* CommonMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A607E1EAA62C30005EE17 /* CommonMacro.swift */; };
 		817F0CDA1EB2DCA6001500E9 /* LCSDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F0CD91EB2DCA6001500E9 /* LCSDemoViewController.swift */; };
-		819C2AAA1EC6F61C00C3CAF4 /* BisetSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C2AA91EC6F61C00C3CAF4 /* BisetSlideViewController.swift */; };
 		819C2AAD1EC6FF7900C3CAF4 /* CommonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C2AAC1EC6FF7900C3CAF4 /* CommonFunc.swift */; };
-		819C2AB71EC717DB00C3CAF4 /* BisetSlideItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C2AB61EC717DB00C3CAF4 /* BisetSlideItemView.swift */; };
-		819C2ABB1EC7185100C3CAF4 /* BisetSlideItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819C2ABA1EC7185100C3CAF4 /* BisetSlideItemView.xib */; };
 		819C2ABE1EC73B8600C3CAF4 /* BitSlideVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C2ABC1EC73B8600C3CAF4 /* BitSlideVC1.swift */; };
 		819C2ABF1EC73B8600C3CAF4 /* BitSlideVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819C2ABD1EC73B8600C3CAF4 /* BitSlideVC1.xib */; };
 		819C2AC21EC73B9D00C3CAF4 /* BitSlideVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C2AC01EC73B9D00C3CAF4 /* BitSlideVC2.swift */; };
@@ -46,7 +47,6 @@
 		81C208D11EAF5CE400F4C78F /* Snow_RainDemeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */; };
 		81C208D51EAF5E8C00F4C78F /* EmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D41EAF5E8C00F4C78F /* EmitterView.swift */; };
 		81E092721EC6EADB0060F250 /* BisetSlideDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E092711EC6EADB0060F250 /* BisetSlideDemoVC.swift */; };
-		81E0927B1EC6F0E80060F250 /* BisetSlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E092781EC6F0E80060F250 /* BisetSlideViewController.xib */; };
 		81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */; };
 		81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */; };
 		81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BE1EA8AE5000DD9928 /* Person.swift */; };
@@ -73,15 +73,16 @@
 		80E1E649E3EF910B5C2E0490 /* Pods-SwiftCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollection/Pods-SwiftCollection.debug.xcconfig"; sourceTree = "<group>"; };
 		8118A5AB1EA5AF3100E225CD /* AnimateDomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateDomeViewController.swift; sourceTree = "<group>"; };
 		8118A5AC1EA5AF3100E225CD /* AnimateDomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimateDomeViewController.xib; sourceTree = "<group>"; };
+		813DB4911ED3E37200AAC6A9 /* BisetSlideItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideItemView.swift; sourceTree = "<group>"; };
+		813DB4921ED3E37200AAC6A9 /* BisetSlideItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BisetSlideItemView.xib; sourceTree = "<group>"; };
+		813DB4931ED3E37200AAC6A9 /* BisetSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideViewController.swift; sourceTree = "<group>"; };
+		813DB4941ED3E37200AAC6A9 /* BisetSlideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BisetSlideViewController.xib; sourceTree = "<group>"; };
 		814C86E91EB8373F00FB0F40 /* PersistentTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentTool.swift; sourceTree = "<group>"; };
 		815645E21EAA4CD900788D69 /* GraduallyTransparentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraduallyTransparentVC.swift; sourceTree = "<group>"; };
 		815645E31EAA4CD900788D69 /* GraduallyTransparentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraduallyTransparentVC.xib; sourceTree = "<group>"; };
 		816A607E1EAA62C30005EE17 /* CommonMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonMacro.swift; sourceTree = "<group>"; };
 		817F0CD91EB2DCA6001500E9 /* LCSDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCSDemoViewController.swift; sourceTree = "<group>"; };
-		819C2AA91EC6F61C00C3CAF4 /* BisetSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideViewController.swift; sourceTree = "<group>"; };
 		819C2AAC1EC6FF7900C3CAF4 /* CommonFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFunc.swift; sourceTree = "<group>"; };
-		819C2AB61EC717DB00C3CAF4 /* BisetSlideItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideItemView.swift; sourceTree = "<group>"; };
-		819C2ABA1EC7185100C3CAF4 /* BisetSlideItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BisetSlideItemView.xib; sourceTree = "<group>"; };
 		819C2ABC1EC73B8600C3CAF4 /* BitSlideVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitSlideVC1.swift; sourceTree = "<group>"; };
 		819C2ABD1EC73B8600C3CAF4 /* BitSlideVC1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BitSlideVC1.xib; sourceTree = "<group>"; };
 		819C2AC01EC73B9D00C3CAF4 /* BitSlideVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitSlideVC2.swift; sourceTree = "<group>"; };
@@ -98,7 +99,6 @@
 		81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snow_RainDemeVC.swift; sourceTree = "<group>"; };
 		81C208D41EAF5E8C00F4C78F /* EmitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmitterView.swift; sourceTree = "<group>"; };
 		81E092711EC6EADB0060F250 /* BisetSlideDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideDemoVC.swift; sourceTree = "<group>"; };
-		81E092781EC6F0E80060F250 /* BisetSlideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BisetSlideViewController.xib; sourceTree = "<group>"; };
 		81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACDemoVC.swift; sourceTree = "<group>"; };
 		81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACDemoVC.xib; sourceTree = "<group>"; };
 		81F826BE1EA8AE5000DD9928 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -362,10 +362,10 @@
 		81E092751EC6F0E80060F250 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				819C2AB61EC717DB00C3CAF4 /* BisetSlideItemView.swift */,
-				819C2ABA1EC7185100C3CAF4 /* BisetSlideItemView.xib */,
-				81E092781EC6F0E80060F250 /* BisetSlideViewController.xib */,
-				819C2AA91EC6F61C00C3CAF4 /* BisetSlideViewController.swift */,
+				813DB4911ED3E37200AAC6A9 /* BisetSlideItemView.swift */,
+				813DB4921ED3E37200AAC6A9 /* BisetSlideItemView.xib */,
+				813DB4931ED3E37200AAC6A9 /* BisetSlideViewController.swift */,
+				813DB4941ED3E37200AAC6A9 /* BisetSlideViewController.xib */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -448,11 +448,11 @@
 				10B096411D4B411C00DC936F /* LaunchScreen.storyboard in Resources */,
 				81C208C61EAF207300F4C78F /* RadarViewController.xib in Resources */,
 				8118A5AE1EA5AF3100E225CD /* AnimateDomeViewController.xib in Resources */,
-				81E0927B1EC6F0E80060F250 /* BisetSlideViewController.xib in Resources */,
+				813DB4981ED3E37200AAC6A9 /* BisetSlideViewController.xib in Resources */,
 				81C208BE1EAE02A800F4C78F /* WaterRipplesDemoVC.xib in Resources */,
 				81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */,
 				815645E51EAA4CD900788D69 /* GraduallyTransparentVC.xib in Resources */,
-				819C2ABB1EC7185100C3CAF4 /* BisetSlideItemView.xib in Resources */,
+				813DB4961ED3E37200AAC6A9 /* BisetSlideItemView.xib in Resources */,
 				10B0963E1D4B411C00DC936F /* Assets.xcassets in Resources */,
 				10B0963C1D4B411C00DC936F /* Main.storyboard in Resources */,
 				819C2AC31EC73B9D00C3CAF4 /* BitSlideVC2.xib in Resources */,
@@ -515,9 +515,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B096711D4B454C00DC936F /* RootViewController.swift in Sources */,
+				813DB4951ED3E37200AAC6A9 /* BisetSlideItemView.swift in Sources */,
 				816A607F1EAA62C30005EE17 /* CommonMacro.swift in Sources */,
 				81C208CC1EAF4F8600F4C78F /* StartButton.swift in Sources */,
-				819C2AB71EC717DB00C3CAF4 /* BisetSlideItemView.swift in Sources */,
 				1055A0AF1D8FC550008B04F6 /* RxSwiftDemoViewController.swift in Sources */,
 				81C208BD1EAE02A800F4C78F /* WaterRipplesDemoVC.swift in Sources */,
 				81C208C11EAEFE1F00F4C78F /* UIColor+Extension.swift in Sources */,
@@ -533,11 +533,11 @@
 				81C208D11EAF5CE400F4C78F /* Snow_RainDemeVC.swift in Sources */,
 				81C208C51EAF207300F4C78F /* RadarViewController.swift in Sources */,
 				8118A5AD1EA5AF3100E225CD /* AnimateDomeViewController.swift in Sources */,
-				819C2AAA1EC6F61C00C3CAF4 /* BisetSlideViewController.swift in Sources */,
 				814C86EA1EB8373F00FB0F40 /* PersistentTool.swift in Sources */,
 				815645E41EAA4CD900788D69 /* GraduallyTransparentVC.swift in Sources */,
 				81C208CE1EAF57AE00F4C78F /* UIImage+Extension.swift in Sources */,
 				106F1EC01D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift in Sources */,
+				813DB4971ED3E37200AAC6A9 /* BisetSlideViewController.swift in Sources */,
 				1034852C1DD4408C009F71CB /* TheOneAndOnly.swift in Sources */,
 				819C2AC21EC73B9D00C3CAF4 /* BitSlideVC2.swift in Sources */,
 				817F0CDA1EB2DCA6001500E9 /* LCSDemoViewController.swift in Sources */,

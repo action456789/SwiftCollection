@@ -15,6 +15,8 @@ import SnapKit
 
 class BisetSlideViewController: UIViewController {
 
+    public private(set) var titleViews = [BisetSlideItemView]()
+    
     let sliderTopPading = 5
     
     var delegate: BisetSlideViewControllerDelegate?
@@ -32,7 +34,9 @@ class BisetSlideViewController: UIViewController {
     }()
     
     @IBOutlet weak var topContainerView: UIView!
-    @IBOutlet weak var slider: UIView!
+    
+    @IBOutlet public weak var slider: UIView!
+    
     @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var slideWidthCons: NSLayoutConstraint!
@@ -64,6 +68,8 @@ class BisetSlideViewController: UIViewController {
                                      height: Int(topContainerView.frame.height))
             
             titleView.titleBtn.tag = index
+            
+            titleViews.append(titleView)
             
             // 按钮点击事件
             titleView.buttonEvent = {sender in
