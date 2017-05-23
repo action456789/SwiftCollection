@@ -10,10 +10,11 @@ import UIKit
 
 class BisetSlideDemoVC: UIViewController {
 
+    let vc = BisetSlideViewController.init(nibName: nil, bundle: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let vc = BisetSlideViewController.init(nibName: nil, bundle: nil)
+    
         vc.delegate = self
         vc.view.frame = CGRect(x: 0, y: 64, width: ScreenWidth, height: ScreenHeight - 64)
         self.view.addSubview(vc.view)
@@ -27,7 +28,13 @@ class BisetSlideDemoVC: UIViewController {
         let vc3 = UIViewController(nibName: "BitSlideVC1", bundle: nil)
         vc3.title = "我是先锋"
         
-        vc.setup(subVCs: [vc1, vc2, vc3])
+        vc.setSubViewControllers(subVCs: [vc1, vc2, vc3])
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        vc.view.frame = CGRect(x: 0, y: 64, width: ScreenWidth, height: ScreenHeight - 64)
     }
 }
 

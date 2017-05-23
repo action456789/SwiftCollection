@@ -38,7 +38,7 @@ class BisetSlideViewController: UIViewController {
     @IBOutlet weak var slideWidthCons: NSLayoutConstraint!
     @IBOutlet weak var slideLeadingCons: NSLayoutConstraint!
     
-    public func setup(subVCs: [UIViewController]) {
+    public func setSubViewControllers(subVCs: [UIViewController]) {
         
         self.subVCs = subVCs
         
