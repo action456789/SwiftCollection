@@ -11,7 +11,7 @@ import UIKit
 class BisetSlideDemoVC: UIViewController {
 
     lazy var  bisetSlideVC: BisetSlideViewController = {
-        let vc = BisetSlideViewController(nibName: nil, bundle: nil)
+        let vc = BisetSlideViewController()
         vc.delegate = self
         vc.view.frame = CGRect(x: 0, y: 64, width: ScreenWidth, height: ScreenHeight)
         vc.slider.backgroundColor = UIColor(rgb: 0x13c2c8)
@@ -25,17 +25,12 @@ class BisetSlideDemoVC: UIViewController {
         let vc3 = UIViewController(nibName: "BitSlideVC1", bundle: nil)
         vc3.title = "我是先锋"
         
-        vc.setSubViewControllers(subVCs: [vc1, vc2, vc3])
         
-        for (index, value) in vc.titleViews.enumerated() {
-            if index == 1 {
-                value.titleBtn.setImage(UIImage(named: "device"), for: .normal)
-                value.titleBtn.setImage(UIImage(named: "device"), for: .highlighted)
-            } else if index == 0 {
-                value.titleBtn.setImage(UIImage(named: "control"), for: .normal)
-                value.titleBtn.setImage(UIImage(named: "control"), for: .highlighted)
-            }
-        }
+        let item1 = BisetSlideItem(title: "命运石之", image: "device", viewController: vc1)
+        let item2 = BisetSlideItem(title: "海棠叶", image: "control", viewController: vc2)
+        let item3 = BisetSlideItem(title: "我是先锋", image: "device", viewController: vc3)
+        
+        vc.slideItems = [item1, item2, item3]
         
         return vc
     }()
