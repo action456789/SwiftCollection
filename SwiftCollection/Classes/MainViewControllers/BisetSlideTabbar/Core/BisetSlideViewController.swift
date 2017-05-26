@@ -77,7 +77,9 @@ class BisetSlideViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        self.scrollView.contentSize = CGSize(width: self.width * CGFloat(self.slideItems!.count), height: 0)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) { 
+            self.scrollView.contentSize = CGSize(width: self.width * CGFloat(self.slideItems!.count), height: 0)
+        }
     }
     
     private var _slideItems: [BisetSlideItem]?
@@ -161,11 +163,6 @@ class BisetSlideViewController: UIViewController {
             }
 
         }
-    }
-    
-    
-    func setSubViewControllers(subViewController: [UIViewController])  {
-        
     }
 }
 
