@@ -10,8 +10,6 @@ import UIKit
 import SnapKit
 
 class BisetSlideItemView: UIView {
-
-    typealias btnEventBlock = (_ sender: UIButton) -> Void
     
     lazy var titleBtn: UIButton = {
         let btn = UIButton(type: .custom)
@@ -27,7 +25,7 @@ class BisetSlideItemView: UIView {
     
     public var topItemHeight = CGFloat(45)
     
-    var buttonEvent: btnEventBlock? = nil
+    var buttonEvent: ((_ sender: UIButton) -> Void)? = nil
     
     override init(frame: CGRect) {
         super.init(frame: frame)

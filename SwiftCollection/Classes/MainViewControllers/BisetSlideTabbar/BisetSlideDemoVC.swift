@@ -14,7 +14,6 @@ class BisetSlideDemoVC: UIViewController {
         let vc = BisetSlideViewController()
         vc.delegate = self
         vc.view.frame = CGRect(x: 0, y: 64, width: ScreenWidth, height: ScreenHeight)
-        vc.slider.backgroundColor = UIColor(rgb: 0x13c2c8)
         
         let vc1 = UIViewController(nibName: "BitSlideVC1", bundle: nil)
         vc1.title = "命运石之"

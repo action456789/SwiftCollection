@@ -35,6 +35,7 @@ class RootViewController: BaseViewController {
                     ,CellItem.init(name: "下雨与雪花效果", objectClass: Snow_RainDemeVC.self)
                     ,CellItem.init(name: "最小子序列", objectClass: LCSDemoViewController.self)
                     ,CellItem.init(name: "滑动分栏框架", objectClass: BisetSlideDemoVC.self)
+                    ,CellItem.init(name: "TableViewCell 滑动分栏框架", objectClass: BisetTableViewDemeVC.self)
                 ]
         return array
     }
