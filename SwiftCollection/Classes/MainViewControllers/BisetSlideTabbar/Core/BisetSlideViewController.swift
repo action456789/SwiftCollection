@@ -89,13 +89,7 @@ class BisetSlideViewController: UIViewController {
             self.headerView.slideItems = _slideItems
             
             self.headerView.itemClickEvent = {index in
-                UIView.animate(withDuration: 0.3, animations: {
-                    self.scrollView.setContentOffset(CGPoint(x: self.width * CGFloat(index),
-                                                             y: 0),
-                                                     animated: true)
-                    // autolayout 执行动画
-                    self.view.layoutIfNeeded()
-                })
+                self.scrollViewScrollToIndex(index: index)
             }
             
             for (index, item) in _slideItems!.enumerated().reversed() {
@@ -109,6 +103,21 @@ class BisetSlideViewController: UIViewController {
                 })
             }
         }
+    }
+    
+    func scrollViewScrollToIndex(index: Int) {
+        guard let array = self.slideItems, index < array.count, index >= 0 else {return}
+        
+        self.delegate?.scrolled?(from: self.currentIndex, to: index)
+        self.currentIndex = index
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            self.scrollView.setContentOffset(CGPoint(x: self.width * CGFloat(index),
+                                                     y: 0),
+                                             animated: true)
+            // autolayout 执行动画
+            self.view.layoutIfNeeded()
+        })
     }
 }
 

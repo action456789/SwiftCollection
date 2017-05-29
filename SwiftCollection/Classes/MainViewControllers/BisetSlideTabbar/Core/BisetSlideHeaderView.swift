@@ -99,7 +99,7 @@ class BisetSlideHeaderView: UIView {
                 
                 itemView.snp.makeConstraints({ (make) in
                     make.left.equalTo(self).offset(CGFloat(index) * itemWidth)
-                    make.top.bottom.equalTo(self)
+                    make.top.equalTo(self)
                     make.bottom.equalTo(self).offset(self.sliderHeight)
                     make.width.equalTo(itemWidth)
                 })
