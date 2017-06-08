@@ -14,13 +14,8 @@ class BisetTableViewDemeVC: UIViewController {
     
     lazy var itemsArray: [BisetSlideItem] = {
         let vc1 = UIViewController(nibName: "BitSlideVC1", bundle: nil)
-        vc1.title = "命运石之"
-        
         let vc2 = UIViewController(nibName: "BitSlideVC2", bundle: nil)
-        vc2.title = "海棠叶"
-        
         let vc3 = UIViewController(nibName: "BitSlideVC1", bundle: nil)
-        vc3.title = "我是先锋"
         
         let item1 = BisetSlideItem(title: "命运石之", image: "device", viewController: vc1)
         let item2 = BisetSlideItem(title: "海棠叶", image: "control", viewController: vc2)

@@ -29,6 +29,8 @@
 		815645E51EAA4CD900788D69 /* GraduallyTransparentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815645E31EAA4CD900788D69 /* GraduallyTransparentVC.xib */; };
 		816A607F1EAA62C30005EE17 /* CommonMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A607E1EAA62C30005EE17 /* CommonMacro.swift */; };
 		817F0CDA1EB2DCA6001500E9 /* LCSDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F0CD91EB2DCA6001500E9 /* LCSDemoViewController.swift */; };
+		818082001EE2A4A200450FB6 /* CoreBluetoothDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818081FE1EE2A4A200450FB6 /* CoreBluetoothDemoVC.swift */; };
+		818082011EE2A4A200450FB6 /* CoreBluetoothDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818081FF1EE2A4A200450FB6 /* CoreBluetoothDemoVC.xib */; };
 		819C2AAD1EC6FF7900C3CAF4 /* CommonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C2AAC1EC6FF7900C3CAF4 /* CommonFunc.swift */; };
 		819C2ABE1EC73B8600C3CAF4 /* BitSlideVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819C2ABC1EC73B8600C3CAF4 /* BitSlideVC1.swift */; };
 		819C2ABF1EC73B8600C3CAF4 /* BitSlideVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819C2ABD1EC73B8600C3CAF4 /* BitSlideVC1.xib */; };
@@ -38,6 +40,9 @@
 		81AFD0FD1EDBB3E30025D99B /* BisetTableViewDemeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81AFD0FB1EDBB3E30025D99B /* BisetTableViewDemeVC.xib */; };
 		81AFD0FF1EDBB5E00025D99B /* BisetSlideHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AFD0FE1EDBB5E00025D99B /* BisetSlideHeaderView.swift */; };
 		81AFD1011EDBD1210025D99B /* BisetSlideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AFD1001EDBD1210025D99B /* BisetSlideTableViewCell.swift */; };
+		81AFD1051EDBFD190025D99B /* VidioMedioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AFD1031EDBFD190025D99B /* VidioMedioViewController.swift */; };
+		81AFD1061EDBFD190025D99B /* VidioMedioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81AFD1041EDBFD190025D99B /* VidioMedioViewController.xib */; };
+		81AFD1081EDBFD910025D99B /* MedioTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AFD1071EDBFD910025D99B /* MedioTool.swift */; };
 		81C208BA1EAE028800F4C78F /* WaterRipplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208B91EAE028800F4C78F /* WaterRipplesView.swift */; };
 		81C208BD1EAE02A800F4C78F /* WaterRipplesDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208BB1EAE02A800F4C78F /* WaterRipplesDemoVC.swift */; };
 		81C208BE1EAE02A800F4C78F /* WaterRipplesDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81C208BC1EAE02A800F4C78F /* WaterRipplesDemoVC.xib */; };
@@ -84,6 +89,8 @@
 		815645E31EAA4CD900788D69 /* GraduallyTransparentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraduallyTransparentVC.xib; sourceTree = "<group>"; };
 		816A607E1EAA62C30005EE17 /* CommonMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonMacro.swift; sourceTree = "<group>"; };
 		817F0CD91EB2DCA6001500E9 /* LCSDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCSDemoViewController.swift; sourceTree = "<group>"; };
+		818081FE1EE2A4A200450FB6 /* CoreBluetoothDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreBluetoothDemoVC.swift; sourceTree = "<group>"; };
+		818081FF1EE2A4A200450FB6 /* CoreBluetoothDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreBluetoothDemoVC.xib; sourceTree = "<group>"; };
 		819C2AAC1EC6FF7900C3CAF4 /* CommonFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFunc.swift; sourceTree = "<group>"; };
 		819C2ABC1EC73B8600C3CAF4 /* BitSlideVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitSlideVC1.swift; sourceTree = "<group>"; };
 		819C2ABD1EC73B8600C3CAF4 /* BitSlideVC1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BitSlideVC1.xib; sourceTree = "<group>"; };
@@ -93,6 +100,9 @@
 		81AFD0FB1EDBB3E30025D99B /* BisetTableViewDemeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BisetTableViewDemeVC.xib; sourceTree = "<group>"; };
 		81AFD0FE1EDBB5E00025D99B /* BisetSlideHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideHeaderView.swift; sourceTree = "<group>"; };
 		81AFD1001EDBD1210025D99B /* BisetSlideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideTableViewCell.swift; sourceTree = "<group>"; };
+		81AFD1031EDBFD190025D99B /* VidioMedioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VidioMedioViewController.swift; sourceTree = "<group>"; };
+		81AFD1041EDBFD190025D99B /* VidioMedioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VidioMedioViewController.xib; sourceTree = "<group>"; };
+		81AFD1071EDBFD910025D99B /* MedioTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedioTool.swift; sourceTree = "<group>"; };
 		81C208B91EAE028800F4C78F /* WaterRipplesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterRipplesView.swift; sourceTree = "<group>"; };
 		81C208BB1EAE02A800F4C78F /* WaterRipplesDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterRipplesDemoVC.swift; sourceTree = "<group>"; };
 		81C208BC1EAE02A800F4C78F /* WaterRipplesDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterRipplesDemoVC.xib; sourceTree = "<group>"; };
@@ -239,6 +249,8 @@
 		10B0966A1D4B454C00DC936F /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				818081F91EE2A46700450FB6 /* CoreBlue */,
+				81AFD1021EDBFCFC0025D99B /* 音视频处理 */,
 				81AFD0F81EDBB39F0025D99B /* BisetTabelViewCell */,
 				81CE2EDB1EC6E12B0036D986 /* BisetSlideTabbar */,
 				817F0CD81EB2DC92001500E9 /* 最小子序列 */,
@@ -306,6 +318,15 @@
 			path = "最小子序列";
 			sourceTree = "<group>";
 		};
+		818081F91EE2A46700450FB6 /* CoreBlue */ = {
+			isa = PBXGroup;
+			children = (
+				818081FE1EE2A4A200450FB6 /* CoreBluetoothDemoVC.swift */,
+				818081FF1EE2A4A200450FB6 /* CoreBluetoothDemoVC.xib */,
+			);
+			path = CoreBlue;
+			sourceTree = "<group>";
+		};
 		819C2AAB1EC6FF4600C3CAF4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +351,16 @@
 				81AFD1001EDBD1210025D99B /* BisetSlideTableViewCell.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		81AFD1021EDBFCFC0025D99B /* 音视频处理 */ = {
+			isa = PBXGroup;
+			children = (
+				81AFD1071EDBFD910025D99B /* MedioTool.swift */,
+				81AFD1031EDBFD190025D99B /* VidioMedioViewController.swift */,
+				81AFD1041EDBFD190025D99B /* VidioMedioViewController.xib */,
+			);
+			path = "音视频处理";
 			sourceTree = "<group>";
 		};
 		81C208B81EAE01F100F4C78F /* 水波纹 */ = {
@@ -478,7 +509,9 @@
 				815645E51EAA4CD900788D69 /* GraduallyTransparentVC.xib in Resources */,
 				10B0963E1D4B411C00DC936F /* Assets.xcassets in Resources */,
 				81AFD0FD1EDBB3E30025D99B /* BisetTableViewDemeVC.xib in Resources */,
+				81AFD1061EDBFD190025D99B /* VidioMedioViewController.xib in Resources */,
 				10B0963C1D4B411C00DC936F /* Main.storyboard in Resources */,
+				818082011EE2A4A200450FB6 /* CoreBluetoothDemoVC.xib in Resources */,
 				819C2AC31EC73B9D00C3CAF4 /* BitSlideVC2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81167CEA1ED706E400751D50 /* BisetSlideViewController.swift in Sources */,
+				81AFD1081EDBFD910025D99B /* MedioTool.swift in Sources */,
 				10B096711D4B454C00DC936F /* RootViewController.swift in Sources */,
 				816A607F1EAA62C30005EE17 /* CommonMacro.swift in Sources */,
 				81C208CC1EAF4F8600F4C78F /* StartButton.swift in Sources */,
@@ -547,6 +581,7 @@
 				81C208BD1EAE02A800F4C78F /* WaterRipplesDemoVC.swift in Sources */,
 				81C208C11EAEFE1F00F4C78F /* UIColor+Extension.swift in Sources */,
 				10B096701D4B454C00DC936F /* CellItem.swift in Sources */,
+				81AFD1051EDBFD190025D99B /* VidioMedioViewController.swift in Sources */,
 				81AFD1011EDBD1210025D99B /* BisetSlideTableViewCell.swift in Sources */,
 				81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */,
 				81167CE81ED706E400751D50 /* BisetSlideItem.swift in Sources */,
@@ -563,6 +598,7 @@
 				814C86EA1EB8373F00FB0F40 /* PersistentTool.swift in Sources */,
 				815645E41EAA4CD900788D69 /* GraduallyTransparentVC.swift in Sources */,
 				81C208CE1EAF57AE00F4C78F /* UIImage+Extension.swift in Sources */,
+				818082001EE2A4A200450FB6 /* CoreBluetoothDemoVC.swift in Sources */,
 				106F1EC01D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift in Sources */,
 				1034852C1DD4408C009F71CB /* TheOneAndOnly.swift in Sources */,
 				819C2AC21EC73B9D00C3CAF4 /* BitSlideVC2.swift in Sources */,
