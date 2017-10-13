@@ -38,6 +38,8 @@ class RootViewController: BaseViewController {
                     ,CellItem.init(name: "TableViewCell 滑动分栏框架", objectClass: BisetTableViewDemeVC.self)
                     ,CellItem.init(name: "蓝牙", objectClass: CoreBluetoothDemoVC.self)
                     ,CellItem.init(name: "第三方库Spring", objectClass: SpringDemoViewController.self)
+                    ,CellItem.init(name: "简单手势立体动画", objectClass: M34DemoViewController.self)
+                    ,CellItem.init(name: "筛子立体动画", objectClass: DiceDemeViewController.self)
                 ]
         return array
     }

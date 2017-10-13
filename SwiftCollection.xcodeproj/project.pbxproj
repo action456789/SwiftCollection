@@ -56,6 +56,8 @@
 		81EA9B7F1F90A0DB004257B5 /* SpringDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EA9B7D1F90A0DB004257B5 /* SpringDemoViewController.xib */; };
 		81EA9B831F90ADD7004257B5 /* M34DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA9B811F90ADD7004257B5 /* M34DemoViewController.swift */; };
 		81EA9B841F90ADD7004257B5 /* M34DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EA9B821F90ADD7004257B5 /* M34DemoViewController.xib */; };
+		81EA9B871F90B828004257B5 /* DiceDemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA9B851F90B828004257B5 /* DiceDemeViewController.swift */; };
+		81EA9B881F90B828004257B5 /* DiceDemeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EA9B861F90B828004257B5 /* DiceDemeViewController.xib */; };
 		81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */; };
 		81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */; };
 		81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BE1EA8AE5000DD9928 /* Person.swift */; };
@@ -117,6 +119,8 @@
 		81EA9B7D1F90A0DB004257B5 /* SpringDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpringDemoViewController.xib; sourceTree = "<group>"; };
 		81EA9B811F90ADD7004257B5 /* M34DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M34DemoViewController.swift; sourceTree = "<group>"; };
 		81EA9B821F90ADD7004257B5 /* M34DemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = M34DemoViewController.xib; sourceTree = "<group>"; };
+		81EA9B851F90B828004257B5 /* DiceDemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceDemeViewController.swift; sourceTree = "<group>"; };
+		81EA9B861F90B828004257B5 /* DiceDemeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiceDemeViewController.xib; sourceTree = "<group>"; };
 		81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACDemoVC.swift; sourceTree = "<group>"; };
 		81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACDemoVC.xib; sourceTree = "<group>"; };
 		81F826BE1EA8AE5000DD9928 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -434,6 +438,8 @@
 			children = (
 				81EA9B811F90ADD7004257B5 /* M34DemoViewController.swift */,
 				81EA9B821F90ADD7004257B5 /* M34DemoViewController.xib */,
+				81EA9B851F90B828004257B5 /* DiceDemeViewController.swift */,
+				81EA9B861F90B828004257B5 /* DiceDemeViewController.xib */,
 			);
 			name = "M34立体效果";
 			path = "SwiftCollection/Classes/M34立体效果";
@@ -518,6 +524,7 @@
 				10B096411D4B411C00DC936F /* LaunchScreen.storyboard in Resources */,
 				81C208C61EAF207300F4C78F /* RadarViewController.xib in Resources */,
 				8118A5AE1EA5AF3100E225CD /* AnimateDomeViewController.xib in Resources */,
+				81EA9B881F90B828004257B5 /* DiceDemeViewController.xib in Resources */,
 				81C208BE1EAE02A800F4C78F /* WaterRipplesDemoVC.xib in Resources */,
 				81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */,
 				815645E51EAA4CD900788D69 /* GraduallyTransparentVC.xib in Resources */,
@@ -615,6 +622,7 @@
 				818082001EE2A4A200450FB6 /* CoreBluetoothDemoVC.swift in Sources */,
 				106F1EC01D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift in Sources */,
 				1034852C1DD4408C009F71CB /* TheOneAndOnly.swift in Sources */,
+				81EA9B871F90B828004257B5 /* DiceDemeViewController.swift in Sources */,
 				819C2AC21EC73B9D00C3CAF4 /* BitSlideVC2.swift in Sources */,
 				81AFD0FC1EDBB3E30025D99B /* BisetTableViewDemeVC.swift in Sources */,
 				817F0CDA1EB2DCA6001500E9 /* LCSDemoViewController.swift in Sources */,
