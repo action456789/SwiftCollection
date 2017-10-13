@@ -37,6 +37,7 @@ class RootViewController: BaseViewController {
                     ,CellItem.init(name: "滑动分栏框架", objectClass: BisetSlideDemoVC.self)
                     ,CellItem.init(name: "TableViewCell 滑动分栏框架", objectClass: BisetTableViewDemeVC.self)
                     ,CellItem.init(name: "蓝牙", objectClass: CoreBluetoothDemoVC.self)
+                    ,CellItem.init(name: "第三方库Spring", objectClass: SpringDemoViewController.self)
                 ]
         return array
     }

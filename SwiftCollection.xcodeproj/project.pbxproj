@@ -54,6 +54,8 @@
 		81E092721EC6EADB0060F250 /* BisetSlideDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E092711EC6EADB0060F250 /* BisetSlideDemoVC.swift */; };
 		81EA9B7E1F90A0DB004257B5 /* SpringDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA9B7C1F90A0DB004257B5 /* SpringDemoViewController.swift */; };
 		81EA9B7F1F90A0DB004257B5 /* SpringDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EA9B7D1F90A0DB004257B5 /* SpringDemoViewController.xib */; };
+		81EA9B831F90ADD7004257B5 /* M34DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA9B811F90ADD7004257B5 /* M34DemoViewController.swift */; };
+		81EA9B841F90ADD7004257B5 /* M34DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EA9B821F90ADD7004257B5 /* M34DemoViewController.xib */; };
 		81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */; };
 		81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */; };
 		81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BE1EA8AE5000DD9928 /* Person.swift */; };
@@ -113,6 +115,8 @@
 		81E092711EC6EADB0060F250 /* BisetSlideDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideDemoVC.swift; sourceTree = "<group>"; };
 		81EA9B7C1F90A0DB004257B5 /* SpringDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringDemoViewController.swift; sourceTree = "<group>"; };
 		81EA9B7D1F90A0DB004257B5 /* SpringDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpringDemoViewController.xib; sourceTree = "<group>"; };
+		81EA9B811F90ADD7004257B5 /* M34DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M34DemoViewController.swift; sourceTree = "<group>"; };
+		81EA9B821F90ADD7004257B5 /* M34DemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = M34DemoViewController.xib; sourceTree = "<group>"; };
 		81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACDemoVC.swift; sourceTree = "<group>"; };
 		81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACDemoVC.xib; sourceTree = "<group>"; };
 		81F826BE1EA8AE5000DD9928 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -247,6 +251,7 @@
 		10B0966A1D4B454C00DC936F /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				81EA9B801F90AD72004257B5 /* M34立体效果 */,
 				81EA9B7B1F90A0C3004257B5 /* 第三方库Spring */,
 				818081F91EE2A46700450FB6 /* CoreBlue */,
 				81AFD0F81EDBB39F0025D99B /* BisetTabelViewCell */,
@@ -424,6 +429,16 @@
 			path = "SwiftCollection/Classes/第三方库Spring";
 			sourceTree = SOURCE_ROOT;
 		};
+		81EA9B801F90AD72004257B5 /* M34立体效果 */ = {
+			isa = PBXGroup;
+			children = (
+				81EA9B811F90ADD7004257B5 /* M34DemoViewController.swift */,
+				81EA9B821F90ADD7004257B5 /* M34DemoViewController.xib */,
+			);
+			name = "M34立体效果";
+			path = "SwiftCollection/Classes/M34立体效果";
+			sourceTree = SOURCE_ROOT;
+		};
 		81F826B81EA8AA6400DD9928 /* RAC */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +525,7 @@
 				81AFD0FD1EDBB3E30025D99B /* BisetTableViewDemeVC.xib in Resources */,
 				10B0963C1D4B411C00DC936F /* Main.storyboard in Resources */,
 				818082011EE2A4A200450FB6 /* CoreBluetoothDemoVC.xib in Resources */,
+				81EA9B841F90ADD7004257B5 /* M34DemoViewController.xib in Resources */,
 				819C2AC31EC73B9D00C3CAF4 /* BitSlideVC2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,6 +611,7 @@
 				814C86EA1EB8373F00FB0F40 /* PersistentTool.swift in Sources */,
 				815645E41EAA4CD900788D69 /* GraduallyTransparentVC.swift in Sources */,
 				81C208CE1EAF57AE00F4C78F /* UIImage+Extension.swift in Sources */,
+				81EA9B831F90ADD7004257B5 /* M34DemoViewController.swift in Sources */,
 				818082001EE2A4A200450FB6 /* CoreBluetoothDemoVC.swift in Sources */,
 				106F1EC01D4B5C6900FCC04F /* NetWorkInterfaceDemo.swift in Sources */,
 				1034852C1DD4408C009F71CB /* TheOneAndOnly.swift in Sources */,

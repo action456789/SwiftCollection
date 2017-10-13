@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Spring
 
 class SpringDemoViewController: UIViewController {
 
+    @IBOutlet weak var springDemoView: SpringView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +24,9 @@ class SpringDemoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        springDemoView.animation = Spring.AnimationPreset.FlipY.rawValue
+        springDemoView.animate()
+    }
     
 }
