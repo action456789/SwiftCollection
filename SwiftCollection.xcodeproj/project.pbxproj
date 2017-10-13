@@ -40,9 +40,6 @@
 		81AFD0FD1EDBB3E30025D99B /* BisetTableViewDemeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81AFD0FB1EDBB3E30025D99B /* BisetTableViewDemeVC.xib */; };
 		81AFD0FF1EDBB5E00025D99B /* BisetSlideHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AFD0FE1EDBB5E00025D99B /* BisetSlideHeaderView.swift */; };
 		81AFD1011EDBD1210025D99B /* BisetSlideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AFD1001EDBD1210025D99B /* BisetSlideTableViewCell.swift */; };
-		81AFD1051EDBFD190025D99B /* VidioMedioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AFD1031EDBFD190025D99B /* VidioMedioViewController.swift */; };
-		81AFD1061EDBFD190025D99B /* VidioMedioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81AFD1041EDBFD190025D99B /* VidioMedioViewController.xib */; };
-		81AFD1081EDBFD910025D99B /* MedioTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AFD1071EDBFD910025D99B /* MedioTool.swift */; };
 		81C208BA1EAE028800F4C78F /* WaterRipplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208B91EAE028800F4C78F /* WaterRipplesView.swift */; };
 		81C208BD1EAE02A800F4C78F /* WaterRipplesDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208BB1EAE02A800F4C78F /* WaterRipplesDemoVC.swift */; };
 		81C208BE1EAE02A800F4C78F /* WaterRipplesDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81C208BC1EAE02A800F4C78F /* WaterRipplesDemoVC.xib */; };
@@ -55,6 +52,8 @@
 		81C208D11EAF5CE400F4C78F /* Snow_RainDemeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */; };
 		81C208D51EAF5E8C00F4C78F /* EmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C208D41EAF5E8C00F4C78F /* EmitterView.swift */; };
 		81E092721EC6EADB0060F250 /* BisetSlideDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E092711EC6EADB0060F250 /* BisetSlideDemoVC.swift */; };
+		81EA9B7E1F90A0DB004257B5 /* SpringDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA9B7C1F90A0DB004257B5 /* SpringDemoViewController.swift */; };
+		81EA9B7F1F90A0DB004257B5 /* SpringDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EA9B7D1F90A0DB004257B5 /* SpringDemoViewController.xib */; };
 		81F826BC1EA8AB9700DD9928 /* RACDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */; };
 		81F826BD1EA8AB9700DD9928 /* RACDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */; };
 		81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826BE1EA8AE5000DD9928 /* Person.swift */; };
@@ -100,9 +99,6 @@
 		81AFD0FB1EDBB3E30025D99B /* BisetTableViewDemeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BisetTableViewDemeVC.xib; sourceTree = "<group>"; };
 		81AFD0FE1EDBB5E00025D99B /* BisetSlideHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideHeaderView.swift; sourceTree = "<group>"; };
 		81AFD1001EDBD1210025D99B /* BisetSlideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideTableViewCell.swift; sourceTree = "<group>"; };
-		81AFD1031EDBFD190025D99B /* VidioMedioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VidioMedioViewController.swift; sourceTree = "<group>"; };
-		81AFD1041EDBFD190025D99B /* VidioMedioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VidioMedioViewController.xib; sourceTree = "<group>"; };
-		81AFD1071EDBFD910025D99B /* MedioTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedioTool.swift; sourceTree = "<group>"; };
 		81C208B91EAE028800F4C78F /* WaterRipplesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterRipplesView.swift; sourceTree = "<group>"; };
 		81C208BB1EAE02A800F4C78F /* WaterRipplesDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterRipplesDemoVC.swift; sourceTree = "<group>"; };
 		81C208BC1EAE02A800F4C78F /* WaterRipplesDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterRipplesDemoVC.xib; sourceTree = "<group>"; };
@@ -115,6 +111,8 @@
 		81C208D01EAF5CE400F4C78F /* Snow_RainDemeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snow_RainDemeVC.swift; sourceTree = "<group>"; };
 		81C208D41EAF5E8C00F4C78F /* EmitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmitterView.swift; sourceTree = "<group>"; };
 		81E092711EC6EADB0060F250 /* BisetSlideDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BisetSlideDemoVC.swift; sourceTree = "<group>"; };
+		81EA9B7C1F90A0DB004257B5 /* SpringDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringDemoViewController.swift; sourceTree = "<group>"; };
+		81EA9B7D1F90A0DB004257B5 /* SpringDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpringDemoViewController.xib; sourceTree = "<group>"; };
 		81F826BA1EA8AB9700DD9928 /* RACDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACDemoVC.swift; sourceTree = "<group>"; };
 		81F826BB1EA8AB9700DD9928 /* RACDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACDemoVC.xib; sourceTree = "<group>"; };
 		81F826BE1EA8AE5000DD9928 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -249,8 +247,8 @@
 		10B0966A1D4B454C00DC936F /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				81EA9B7B1F90A0C3004257B5 /* 第三方库Spring */,
 				818081F91EE2A46700450FB6 /* CoreBlue */,
-				81AFD1021EDBFCFC0025D99B /* 音视频处理 */,
 				81AFD0F81EDBB39F0025D99B /* BisetTabelViewCell */,
 				81CE2EDB1EC6E12B0036D986 /* BisetSlideTabbar */,
 				817F0CD81EB2DC92001500E9 /* 最小子序列 */,
@@ -353,16 +351,6 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		81AFD1021EDBFCFC0025D99B /* 音视频处理 */ = {
-			isa = PBXGroup;
-			children = (
-				81AFD1071EDBFD910025D99B /* MedioTool.swift */,
-				81AFD1031EDBFD190025D99B /* VidioMedioViewController.swift */,
-				81AFD1041EDBFD190025D99B /* VidioMedioViewController.xib */,
-			);
-			path = "音视频处理";
-			sourceTree = "<group>";
-		};
 		81C208B81EAE01F100F4C78F /* 水波纹 */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +414,16 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		81EA9B7B1F90A0C3004257B5 /* 第三方库Spring */ = {
+			isa = PBXGroup;
+			children = (
+				81EA9B7C1F90A0DB004257B5 /* SpringDemoViewController.swift */,
+				81EA9B7D1F90A0DB004257B5 /* SpringDemoViewController.xib */,
+			);
+			name = "第三方库Spring";
+			path = "SwiftCollection/Classes/第三方库Spring";
+			sourceTree = SOURCE_ROOT;
+		};
 		81F826B81EA8AA6400DD9928 /* RAC */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,7 +469,7 @@
 				TargetAttributes = {
 					10B096321D4B411C00DC936F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = DHZ4447J4K;
+						DevelopmentTeam = 33UJTTK2KL;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -500,6 +498,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81EA9B7F1F90A0DB004257B5 /* SpringDemoViewController.xib in Resources */,
 				819C2ABF1EC73B8600C3CAF4 /* BitSlideVC1.xib in Resources */,
 				10B096411D4B411C00DC936F /* LaunchScreen.storyboard in Resources */,
 				81C208C61EAF207300F4C78F /* RadarViewController.xib in Resources */,
@@ -509,7 +508,6 @@
 				815645E51EAA4CD900788D69 /* GraduallyTransparentVC.xib in Resources */,
 				10B0963E1D4B411C00DC936F /* Assets.xcassets in Resources */,
 				81AFD0FD1EDBB3E30025D99B /* BisetTableViewDemeVC.xib in Resources */,
-				81AFD1061EDBFD190025D99B /* VidioMedioViewController.xib in Resources */,
 				10B0963C1D4B411C00DC936F /* Main.storyboard in Resources */,
 				818082011EE2A4A200450FB6 /* CoreBluetoothDemoVC.xib in Resources */,
 				819C2AC31EC73B9D00C3CAF4 /* BitSlideVC2.xib in Resources */,
@@ -572,16 +570,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				81167CEA1ED706E400751D50 /* BisetSlideViewController.swift in Sources */,
-				81AFD1081EDBFD910025D99B /* MedioTool.swift in Sources */,
 				10B096711D4B454C00DC936F /* RootViewController.swift in Sources */,
 				816A607F1EAA62C30005EE17 /* CommonMacro.swift in Sources */,
 				81C208CC1EAF4F8600F4C78F /* StartButton.swift in Sources */,
+				81EA9B7E1F90A0DB004257B5 /* SpringDemoViewController.swift in Sources */,
 				1055A0AF1D8FC550008B04F6 /* RxSwiftDemoViewController.swift in Sources */,
 				81167CE91ED706E400751D50 /* BisetSlideItemView.swift in Sources */,
 				81C208BD1EAE02A800F4C78F /* WaterRipplesDemoVC.swift in Sources */,
 				81C208C11EAEFE1F00F4C78F /* UIColor+Extension.swift in Sources */,
 				10B096701D4B454C00DC936F /* CellItem.swift in Sources */,
-				81AFD1051EDBFD190025D99B /* VidioMedioViewController.swift in Sources */,
 				81AFD1011EDBD1210025D99B /* BisetSlideTableViewCell.swift in Sources */,
 				81F826BF1EA8AE5000DD9928 /* Person.swift in Sources */,
 				81167CE81ED706E400751D50 /* BisetSlideItem.swift in Sources */,
@@ -731,7 +728,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DHZ4447J4K;
+				DEVELOPMENT_TEAM = 33UJTTK2KL;
 				INFOPLIST_FILE = SwiftCollection/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -749,7 +746,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DHZ4447J4K;
+				DEVELOPMENT_TEAM = 33UJTTK2KL;
 				INFOPLIST_FILE = SwiftCollection/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

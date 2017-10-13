@@ -36,7 +36,6 @@ class RootViewController: BaseViewController {
                     ,CellItem.init(name: "最小子序列", objectClass: LCSDemoViewController.self)
                     ,CellItem.init(name: "滑动分栏框架", objectClass: BisetSlideDemoVC.self)
                     ,CellItem.init(name: "TableViewCell 滑动分栏框架", objectClass: BisetTableViewDemeVC.self)
-                    ,CellItem.init(name: "音视频处理", objectClass: VidioMedioViewController.self)
                     ,CellItem.init(name: "蓝牙", objectClass: CoreBluetoothDemoVC.self)
                 ]
         return array

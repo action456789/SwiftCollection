@@ -13,6 +13,7 @@ PODS:
   - Result (3.2.2)
   - RxSwift (3.4.1)
   - SnapKit (3.2.0)
+  - Spring (1.0.3)
   - SwiftLCS (1.1.1):
     - SwiftLCS/Foundation (= 1.1.1)
   - SwiftLCS/Core (1.1.1)
@@ -28,8 +29,19 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 5.0.0)
   - RxSwift
   - SnapKit
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift4`)
   - SwiftLCS
   - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift4
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: b65cb00a1adc7e810e2ad10b174b840b6d520ac3
+    :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
@@ -41,9 +53,10 @@ SPEC CHECKSUMS:
   Result: 4edd39003fdccf281d418ee1b006571f70123250
   RxSwift: 656f8fbeca5bc372121a72d9ebdd3cd3bc0ffade
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SwiftLCS: fd7c629d7fb932be051c50e843c8a8a08f24a780
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: bc465edaf347558a821ed9d399509531fa84a315
+PODFILE CHECKSUM: 4064dccd509c34fadeca2711a170509f5eb74003
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

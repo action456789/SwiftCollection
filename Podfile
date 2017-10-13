@@ -23,6 +23,6 @@ target 'SwiftCollection' do
     
     # 最小子序列
     pod 'SwiftLCS'
-
+    pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift4'
 end
 
