@@ -27,7 +27,7 @@ class M34DemoViewController: UIViewController {
         animateView.addGestureRecognizer(panGesture)
     }
     
-    func viewTransform(sender: UIPanGestureRecognizer) {
+    @objc func viewTransform(sender: UIPanGestureRecognizer) {
         let point = sender.translation(in: animateView)
         let angleX = self.angle.x + (point.x/30)
         let angleY = self.angle.y - (point.y/30)

@@ -14,11 +14,11 @@ import SnapKit
 }
 
 class BisetSlideViewController: UIViewController {
-
+    
     public var width = UIScreen.main.bounds.width
     public var height = UIScreen.main.bounds.height
     public var topItemHeight = CGFloat(45)
-
+    
     public var bottomItemHeight: CGFloat {
         if self.navigationController != nil {
             return self.height - self.topItemHeight - 1 - 64
@@ -26,11 +26,11 @@ class BisetSlideViewController: UIViewController {
             return self.height - self.topItemHeight - 1
         }
     }
-
-    public var delegate: BisetSlideViewControllerDelegate?
     
-    fileprivate(set) var currentIndex: Int = 0
-
+    open weak var delegate: BisetSlideViewControllerDelegate?
+    
+    private(set) var currentIndex: Int = 0
+    
     lazy var headerView: BisetSlideHeaderView = {
         return BisetSlideHeaderView(frame: CGRect(x: 0, y: 0, width: self.width, height: self.topItemHeight))
     }()
@@ -69,7 +69,7 @@ class BisetSlideViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) { 
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
             self.scrollView.contentSize = CGSize(width: self.width * CGFloat(self.slideItems!.count), height: 0)
         }
     }
@@ -129,3 +129,4 @@ extension BisetSlideViewController: UIScrollViewDelegate {
         self.currentIndex = Int(page)
     }
 }
+

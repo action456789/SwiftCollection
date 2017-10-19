@@ -62,7 +62,8 @@ class BisetSlideItemView: UIView {
         super.updateConstraints()
     }
     
-    func buttonEvent(_ sender: UIButton) {
+    @objc func buttonEvent(_ sender: UIButton) {
         buttonEvent?(sender)
     }
 }
+

@@ -40,7 +40,7 @@ class BisetSlideHeaderView: UIView {
         guard let array = self.slideItems, index < array.count, index >= 0 else {
             return
         }
-
+        
         UIView.animate(withDuration: 0.3, animations: {
             self.slider.snp.updateConstraints({ (make) in
                 make.left.equalTo(self).offset(self.itemWidth * CGFloat(index) + self.sliderTopPading)
@@ -83,7 +83,7 @@ class BisetSlideHeaderView: UIView {
                 itemView.titleBtn.tag = index
                 
                 // 按钮点击事件
-                itemView.buttonEvent = { sender in
+                itemView.buttonEvent = { [unowned self] sender in
                     
                     self.itemClickEvent?(index)
                     
@@ -104,7 +104,7 @@ class BisetSlideHeaderView: UIView {
                     make.width.equalTo(itemWidth)
                 })
             }
-        
+            
             self.slider.snp.makeConstraints { (make) in
                 make.left.equalTo(self).offset(sliderTopPading)
                 make.bottom.equalTo(self)
@@ -114,3 +114,4 @@ class BisetSlideHeaderView: UIView {
         }
     }
 }
+

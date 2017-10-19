@@ -13,12 +13,12 @@ import UIKit
 }
 
 class BisetSlideTableViewCell: UITableViewCell {
-
+    
     public var width = UIScreen.main.bounds.width
     
-    public var delegate: BisetSlideTableViewCellDelegate?
+    open weak var delegate: BisetSlideTableViewCellDelegate?
     
-    fileprivate(set) var currentIndex: Int = 0
+    private(set) var currentIndex: Int = 0
     
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -58,7 +58,7 @@ class BisetSlideTableViewCell: UITableViewCell {
             }
         }
     }
-
+    
     func scrollToIndex(index: Int) {
         guard let array = self.slideItems, index < array.count, index >= 0 else {return}
         
@@ -92,10 +92,10 @@ class BisetSlideTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
 }

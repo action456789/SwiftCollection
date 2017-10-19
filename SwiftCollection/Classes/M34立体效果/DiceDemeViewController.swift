@@ -79,7 +79,7 @@ class DiceDemeViewController: UIViewController {
         view.addSubview(diceView)
     }
 
-    func viewTransform(sender: UIPanGestureRecognizer) {
+    @objc func viewTransform(sender: UIPanGestureRecognizer) {
         
         let point = sender.translation(in: diceView)
         let angleX = angle.x + (point.x/30)
